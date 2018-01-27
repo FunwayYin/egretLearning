@@ -1,0 +1,273 @@
+EUI库学习目录
+
+概述
+    简介--yes
+    新特性
+
+快速入门
+    快速入门--yes
+    EUI项目配置--yes
+
+EXML
+    使用EXML--yes
+        1、EXML是可以运行时加载解析的。可以把它当做标准的文本文件加载后解析，或者直接将exml文本内容嵌入代码中解析。
+        2、直接引用EXML文件
+            var button = new eui.Button();
+            button.skinName = "resource/skins/ButtonSkin.exml";
+            this.addChild(button);
+        3、动态加载EXML文件
+            private init():void{
+                EXML.load("skins/ButtonSkin.exml",this.onLoaded,this);
+            }
+            private onLoaded(clazz:any,url:string):void{
+                var button = new eui.Button();
+                button.skinName = clazz;
+                this.addChild(button);
+            }
+        4、嵌入EXML到代码
+    EXML基本语法(一)--yes
+        1、 <e:Group class="app.MyGroup" xmlns:e="http://ns.egret.com/eui">
+              <e:Image id="iconDisplay" />         //same
+            </e:Group>
+
+            ==
+
+            module app {
+                export class MyGroup extends eui.Group {
+                    public iconDisplay:eui.Image;   //same
+                    public constructor(){
+                        super();
+                        var image = new eui.Image();
+                        this.addChild(image);
+                        this.iconDisplay = image;
+                    }
+                }
+            }
+
+    EXML基本语法(二)--
+        1、EXMl支持数据绑定功能，数据绑定相当于是给静态的EXML文件添加动态脚本的功能，能够极大简化视图刷新的代码量。
+        2、includeIn、excludeFrom
+
+皮肤
+    皮肤分离机制--yes
+        1、皮肤分离就是把样式从逻辑中解耦出来，用一个逻辑组件外加一个皮肤对象的方式去实现原来单个组件的功能。
+            逻辑组件里只负责动态的逻辑控制代码，如事件监听和数据刷新。
+            皮肤里只负责外观，如实例化子项，初始化样式和布局等静态的属性。
+
+        2、皮肤并不是显示对象。您可以把它理解为一个数据对象，存储了初始化显示列表和外观需要的特定数据。
+           将皮肤附加到逻辑组件上的过程就是对逻辑组件应用一些列外观创建的初始化操作。
+
+        3、这样做最浅显的好处是解耦了逻辑和皮肤，写逻辑的时候，只关注逻辑功能。写皮肤的时候，只关注样式。
+            类似与html,css与js
+
+    皮肤部件(SkinPart)--80%
+        1、所有的可定制皮肤组件都必须继承自eui.Component或它的子类
+        2、Component的每个子类都封装了一定的功能，写自定义组件时根据需求选择不同的组件继承即可。
+        3、每个组件都有一个childrenCreated()方法，它会在组件初始化完成后回调，子类通常覆盖这个方法来访问一些延迟实例化的子项
+        4、在皮肤附加到逻辑组件上时，会自动匹配双方的同名变量和id，这些同名变量就叫做“皮肤部件”(SkinPart)， 类似于html与css,js中的id
+    视图状态--80%
+        1、invalidateState  使失效
+        2、getCurrentState  获取状态
+        3、currentState
+    配置主题--
+        1、主题配置文件就是一个标准的JSON文件
+        2、这里需要注意的是，引擎只会识别 xxx.thm.json 文件作为 theme 文件，其他格式的文件名不会自动生成
+        3、启用主题
+            class Main extends egret.Sprite {
+                public constructor(){
+                    this.once(egret.Event.ADDED_TO_STAGE,this.onAddedToStage,this);
+                }
+                public onAddedToStage(event:egret.Event):void{
+                    new eui.Theme("resource/default.thm.json", this.stage);
+                }
+            }
+        4、特别注意，主题配置文件只是起到设置默认值的作用，并不能运行时切换所有默认皮肤。因为这么做需要遍历整个显示列表，开销较大。
+
+    自定义皮肤--yes
+        1、方式1 加载文件
+            constructor() {
+                super();
+                this.skinName = "resource/testSkin.exml";
+            }
+            protected createChildren() {
+              super.createChildren();
+              console.log("createChildren")
+            }
+            private onComplete():void{
+               console.log("onComplete");
+            }
+            在 createChildren 的时候，是获取不到内部组件的，因为此时 exml 文件还没有加载完成，
+            要通过监听 eui.UIEvent.COMPLETE 这个事件获取组件创建完成的消息。像上面这个例子，console 会先输出 createChildren 再输出 onComplete
+
+        2、方式2 通过Theme主题管理使用
+            class TestSkin extends eui.Component {
+               constructor() {
+                    super();
+                    this.skinName = "mySkin.TestSkin";
+                }
+            }
+    自定义加载根目录--yes
+        1、EXML.prefixURL = xxxx，此api可用于cdn设置
+
+自动布局
+    屏幕适配
+    失效验证机制
+    自动布局原理
+    解决异步问题
+    自动布局调试
+
+使用布局类
+    基本布局
+        1、this.myGroup.layout = new eui.BasicLayout();
+        2、horizontalCenter
+           verticalCenter
+           这两个值是定义对象的中心点与容器的中心点之间的差值。如果两项都设置为0，代表中心点完全重合，也就实现了自动居中功能。
+        3、假如需求更复杂一些，按钮不仅仅是居中，还始终和容器边界保持20像素的差值，需要用到的属性是：
+           var btn:eui.Button = new eui.Button();
+           btn.label = "This is an egret button";
+           btn.top = 20;
+           btn.bottom = 20;
+           btn.left = 20;
+           btn.right = 20;
+           this.myGroup.addChild( btn );
+        4、百分比设定
+            btn.percentWidth = 60;
+            btn.percentHeight = 80;
+    水平布局
+        1、在横向布局，以及下面将要讲的垂直布局，网格布局中，都会忽略在子项上的坐标设置，所有子项的位置将由布局类统一管理。
+        2、var hLayout:eui.HorizontalLayout = new eui.HorizontalLayout();
+          hLayout.gap = 10;
+          hLayout.paddingTop = 30;
+          hLayout.horizontalAlign = egret.HorizontalAlign.CENTER;
+          this.myGroup.layout = hLayout
+    垂直布局
+        1、var vLayout:eui.VerticalLayout = new eui.VerticalLayout();
+          vLayout.gap = 10;
+          vLayout.paddingTop = 30;
+          vLayout.horizontalAlign = egret.HorizontalAlign.CENTER;
+          this.myGroup.layout = vLayout; //设置问垂直布局
+    网格布局
+        1、var tLayout:eui.TileLayout = new eui.TileLayout();
+          tLayout.horizontalGap = 10;
+          tLayout.verticalGap = 10;
+          tLayout.columnAlign = eui.ColumnAlign.JUSTIFY_USING_WIDTH;
+          tLayout.rowAlign = eui.RowAlign.JUSTIFY_USING_HEIGHT;
+          tLayout.paddingTop = 30;
+          tLayout.paddingRight = 30;
+          tLayout.paddingLeft = 30;
+          tLayout.paddingBottom = 10;
+          tLayout.requestedColumnCount = 2;  /// 设置两列显示
+          this.myGroup.layout = tLayout;    /// 网格布局
+    自定义布局--50%
+        1、不过在一些特殊情况下，可能会需要一些特殊的布局方式。此时可以制作自定义布局类，代替默认的布局类
+        2、module uilayout {
+
+               //类名
+              var UIComponentClass = "eui.UIComponent";
+
+              //自定义的环形布局类
+              export class RingLayout extends eui.LayoutBase{
+                  public constructor(){
+                      super();
+                  }
+               }
+           }
+控件
+    文本--yes
+        1、文本控件对应的类是 eui.Label，eui.Label 继承自 egret.TextField，实现了 eui.UIComponent 接口。因此它不仅拥有基本的文本功能(egret.TextField)，还有自动布局功能(eui.UIComponent)
+        2、var label:eui.Label = new eui.Label();
+           label.text = "eui Label test";
+        3、Label既可以显示单行文本，也可以显示多行文本。当为Label设定了宽度，并且文字过长的时候，会自动换行
+        4、label 支持style属性，类似于css样式，在default.thm.json中增加style对象的设置,在exml中给label设置style样式
+    图片--98%
+        1、图片控件对应的类是 eui.Image。eui.Image 继承自 egret.Bitmap，实现了 eui.UIComponent 接口。因此它不仅拥有基本的位图功能(egret.Bitmap)，还有自动布局功能(eui.UIComponent)
+        2、var image = new  eui.Image();
+           image.source = "image/icon.png";
+           this.addChild(image);
+        3、Image 的 scale9Grid 属性是一个指定的矩形区域，矩形区域对应 A5 区域的起点坐标以及宽高。 带理解深刻
+    按钮--yes
+        1、按钮控件对应的类是 eui.Button。eui.Button 继承自 eui.Component类，因此它可以定制皮肤。要显示按钮通常要给按钮指定皮肤
+        2、
+            var button = new eui.Button();
+            button.width = 100;
+            button.height = 40;
+            button.label = "Confirm"; //按钮上的文字
+            button.skinName = "ButtonSkin.exml";//按钮的皮肤
+            this.addChild(button);
+        3、按钮的皮肤通常需要有 up、down、disabled 等状态
+        4、按钮可以设置禁用，禁用的按钮会以另外一种样式显示（进入disabled视图状态），且不再响应交互，设置enabled属性可以控制是否禁用：button.enabled = false
+        5、若想要获取按钮的文本对象请使用如下方法：
+            var button = new eui.Button();
+            (<eui.Label>button.labelDisplay).size = 50；
+    复选框--yes
+        1、复选框组件 eui.CheckBox 继承自切换按钮 eui.ToggleButton。当它被选中,selected属性将变为true，反之则为false。
+        2、当然复选框按钮也继承自按钮 eui.Button 和容器 eui.Component ,他具有按钮和容器的基本功能。
+    单选框--yes
+        1、var rdb:eui.RadioButton = new eui.RadioButton();
+           rdb.label = "Select 1";
+           rdb.value =1;
+           this.addChild(rdb);
+        2、使用RadioButtonGroup
+            创建一个egret.gui.RadioButtonGroup的实例，并设置到每个单选按钮的group属性上。
+            这样的好处在于，只需要处理RadioButtonGroup实例上的事件侦听，就能捕获数值的变化，要取得最终选择的值，从RadioButtonGroup实例上直接获取即可
+            var radioGroup: eui.RadioButtonGroup = new eui.RadioButtonGroup();
+            radioGroup.addEventListener(eui.UIEvent.CHANGE, this.radioChangeHandler, this);
+            var radioGroup: eui.RadioButtonGroup = new eui.RadioButtonGroup();
+            radioGroup.addEventListener(eui.UIEvent.CHANGE, this.radioChangeHandler, this);
+            this.addChild(rdb);
+    状态切换按钮--yes
+        1、ToggleButton，是具备状态的按钮，该状态就是selected属性，类型是布尔值，默认为false，当点击按钮，selected将变为true，再点击一下，重新变成false。
+        2、 var btn: eui.ToggleSwitch = new eui.ToggleSwitch();
+            btn.label = "This is a ToggleButton";
+            btn.addEventListener(eui.UIEvent.CHANGE, this.changeHandler, this);
+            this.addChild(btn);
+    滑动选择器--yes
+        1、在 eui 中有滑块控件（类似于手机上亮度调节器）。根据方向，分为eui.HSlider 水平滑块控件和 eui.VSlider 垂直滑块控件。
+        2、eui.HSlider 和 eui.VSlider 继承自 eui.Range 控件。可以设置 maximum 、minimum、value 等属性。
+    进度条--yes
+        1、eui.ProgressBa 进度条，一般用在加载某个或某组资源的时候，显示加载进程。
+        2、与滑块控件一样，进度条控件也继承自 eui.Range 控件。也就是说 eui.Progress 进度条控件也可以设置 maximum 、minimum、value 等属性
+        3、this.vBar.direction = eui.Direction.BTT;//垂直方向进度条
+    输入文本--yes
+        1、EUI 提供了输入文本控件，使用 eui.EditableText 可以创建可供用户输入的文本控件。
+        2、eui.EditableText 继承自 egret.TextInput ,也就是说它可以使用 egret.TextFild 和 egret.TextInput 的属性和方法。
+        3、 private myEditableText:eui.EditableText = new eui.EditableText();
+        4、//添加密码显示 添加在 constructor () 内.
+          this.myEditableText.displayAsPassword = true;
+容器
+    简单容器( Group )--yes
+        1、Group 是最轻量级的，它本身不可以设置皮肤，也不具备外观，它的呈现只取决于内部的显示对象。如果需要使用容器，并且没有设置皮肤的需求，那么请尽量使用 Group。
+        2、Group 操作内部对象的方法和 Sprite 基本一致，只是增加了2个方法getElementAt() 和 numElements()
+        3、如果自定义一个类，继承自Group，那么其内部的其它对象应该在 createChildren() 方法中创建和添加，也就是说，要覆盖 Group 的 createChildren() 方法
+        4、eui 中容器的一个显著特点是，可以配置 layout 对象，来实现不同的布局方式。这对开发工作是非常有好处的
+        5、myGroup.layout = new eui.VerticalLayout(),使用绝对布局，会忽略 myGroup 中按钮的自定义坐标
+        6、调用 removeChildren() 方法可以删除所有的内部显示对象
+    层叠容器--yes
+        1、ViewStack 是层叠容器，在 ViewStack 容器中可以添加多个子项，但只能显示其中的一个。通过设置 selectedIndex 或者 selectedChild 属性，来控制当前应该显示的子项。
+    面板容器--yes
+        1、面板 Panel 也是常用的容器，这种类型的组件在很多不同领域的 UI 库中都存在，也是开发者比较熟知的一种容器，它和 Group 的区别在于，可以给它附加一个皮肤，并设置一个标题栏和关闭按钮
+        2、  var myPannel = new eui.Panel();
+             myPannel.skinName = exml;
+             myPannel.title = "titleHello";
+             this.addChild(myPannel)
+        3、Panel 中有3个默认的皮肤部件：moveArea、titleDisplay、closeButton
+    滚动控制容器--yes
+        1、视口(ViewPort)
+        2、对 Egret 来说，”滚动”却是需要自己实现的，因为 Egret 一般情况下要禁用浏览器的滚动，以免对交互造成干扰。对于在Canvas上绘制的内容，”滚动”是需要开发者自己去”虚拟实现”的
+        3、EUI 中已经提供了一个组件：Scroller。开发者只需要创建一个 Scroller 的实例，设置位置和尺寸，然后把需要”滚动”的容器，设置到 Scroller 的 viewport 属性上
+        4、定位滚动位置：
+            Scroller.viewport.scrollV  纵向滚动的位置
+            Scroller.viewport.scrollH  横向滚动的位置
+        5、Scroller 中有 stopAnimation() 方法，可以立即停止当前的滚动动画
+数据集合
+    数据容器
+    数组集合
+    列表
+    选项卡
+    自定义项呈示器
+
+进阶技巧
+    在EXML中使用自定义组件
+    Style使用--yes
+
+
