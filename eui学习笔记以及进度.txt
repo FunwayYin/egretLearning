@@ -117,7 +117,7 @@ EXML
     自动布局调试
 
 使用布局类
-    基本布局
+    基本布局--yes
         1、this.myGroup.layout = new eui.BasicLayout();
         2、horizontalCenter
            verticalCenter
@@ -133,20 +133,20 @@ EXML
         4、百分比设定
             btn.percentWidth = 60;
             btn.percentHeight = 80;
-    水平布局
+    水平布局--yes
         1、在横向布局，以及下面将要讲的垂直布局，网格布局中，都会忽略在子项上的坐标设置，所有子项的位置将由布局类统一管理。
         2、var hLayout:eui.HorizontalLayout = new eui.HorizontalLayout();
           hLayout.gap = 10;
           hLayout.paddingTop = 30;
           hLayout.horizontalAlign = egret.HorizontalAlign.CENTER;
           this.myGroup.layout = hLayout
-    垂直布局
+    垂直布局--yes
         1、var vLayout:eui.VerticalLayout = new eui.VerticalLayout();
           vLayout.gap = 10;
           vLayout.paddingTop = 30;
           vLayout.horizontalAlign = egret.HorizontalAlign.CENTER;
           this.myGroup.layout = vLayout; //设置问垂直布局
-    网格布局
+    网格布局--yes
         1、var tLayout:eui.TileLayout = new eui.TileLayout();
           tLayout.horizontalGap = 10;
           tLayout.verticalGap = 10;
