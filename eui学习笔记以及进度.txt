@@ -2,7 +2,7 @@ EUI库学习目录
 
 概述
     简介--yes
-    新特性
+    新特性--yes
 
 快速入门
     快速入门--yes
@@ -44,7 +44,7 @@ EXML
                 }
             }
 
-    EXML基本语法(二)--
+    EXML基本语法(二)--80%
         1、EXMl支持数据绑定功能，数据绑定相当于是给静态的EXML文件添加动态脚本的功能，能够极大简化视图刷新的代码量。
         2、includeIn、excludeFrom
 
@@ -69,7 +69,7 @@ EXML
         1、invalidateState  使失效
         2、getCurrentState  获取状态
         3、currentState
-    配置主题--
+    配置主题--yes
         1、主题配置文件就是一个标准的JSON文件
         2、这里需要注意的是，引擎只会识别 xxx.thm.json 文件作为 theme 文件，其他格式的文件名不会自动生成
         3、启用主题
@@ -115,6 +115,19 @@ EXML
     自动布局原理
     解决异步问题
     自动布局调试
+        1、调试技巧：
+                在没有自动布局的体系里，若某个组件的尺寸表现错了，直接在这个组件上找问题即可。
+                但当我们引入自动布局后，由于组件在显示列表上的布局是互相影响的。所以一个组件的尺寸或位置不对。问题不一定是在这个组件上，而是有可能在他的父级或子项上。
+                所以调试的第一步，一定是先定位到出问题的那个组件。再调试那个组件找出显示不正确的原因。定位的方法可以参考以下步骤进行：
+
+                (1)自身是否被显式设置了尺寸？查看explicitWidth（明确的宽度），explicitHeight。如果显式设置了，设置的对吗？不对找到问题。没有显式设置就继续。
+                (2)测量的尺寸对不对？查看measuredWidth，measuredHeight。不对，继续。对，跳到(5)
+                (3)查看top,left,right,bottom,horizontalCenter,verticalCenter,percentWidth,percentHeight这些布局属性对不对。注意：只有BasicLayout下这些属性才全部有效。
+                (4)布局类对吗？查看layout属性。以上都查过了，找不出问题，继续按(5)和(6)在显示列表向上或向下开始找。
+                (5)向上查看父级以及父级的父级容器的相关属性，是否正确。是否是父级容器强制设置了尺寸。
+                (6)查看子项以及子项的子项的测量尺寸。找到第一个开始不对的节点。
+
+        2、
 
 使用布局类
     基本布局--yes
@@ -172,6 +185,7 @@ EXML
                   }
                }
            }
+
 控件
     文本--yes
         1、文本控件对应的类是 eui.Label，eui.Label 继承自 egret.TextField，实现了 eui.UIComponent 接口。因此它不仅拥有基本的文本功能(egret.TextField)，还有自动布局功能(eui.UIComponent)
@@ -234,6 +248,7 @@ EXML
         3、 private myEditableText:eui.EditableText = new eui.EditableText();
         4、//添加密码显示 添加在 constructor () 内.
           this.myEditableText.displayAsPassword = true;
+
 容器
     简单容器( Group )--yes
         1、Group 是最轻量级的，它本身不可以设置皮肤，也不具备外观，它的呈现只取决于内部的显示对象。如果需要使用容器，并且没有设置皮肤的需求，那么请尽量使用 Group。
@@ -243,6 +258,7 @@ EXML
         5、myGroup.layout = new eui.VerticalLayout(),使用绝对布局，会忽略 myGroup 中按钮的自定义坐标
         6、调用 removeChildren() 方法可以删除所有的内部显示对象
     层叠容器--yes
+        0、ViewStack 导航布局器
         1、ViewStack 是层叠容器，在 ViewStack 容器中可以添加多个子项，但只能显示其中的一个。通过设置 selectedIndex 或者 selectedChild 属性，来控制当前应该显示的子项。
     面板容器--yes
         1、面板 Panel 也是常用的容器，这种类型的组件在很多不同领域的 UI 库中都存在，也是开发者比较熟知的一种容器，它和 Group 的区别在于，可以给它附加一个皮肤，并设置一个标题栏和关闭按钮
@@ -259,15 +275,113 @@ EXML
             Scroller.viewport.scrollV  纵向滚动的位置
             Scroller.viewport.scrollH  横向滚动的位置
         5、Scroller 中有 stopAnimation() 方法，可以立即停止当前的滚动动画
+
 数据集合
-    数据容器
-    数组集合
-    列表
-    选项卡
-    自定义项呈示器
+    数据容器--80%
+        1、对于 DataGroup 而言，也是类似的道理。您除了设置数据源，还要设置单条数据的”模板”。这个”模板”，在eui 框架中称之为 ItemRenderer。
+        2、//用ArrayCollection包装
+            var myCollection:eui.ArrayCollection = new eui.ArrayCollection(sourceArr);
+        3、//然后创建DataGroup的实例，并设置数据源(属性名称是dataProvider)
+            var dataGroup:eui.DataGroup = new eui.DataGroup();
+            dataGroup.dataProvider = myCollection;
+            dataGroup.percentWidth = 100;
+            dataGroup.percentHeight = 100;
+            this.addChild(dataGroup);
+        4、//创建 ItemRenderer 项目渲染器，一个是设置 ItemRenderer 的样式。
+            class LabelRenderer extends eui.ItemRenderer {
+                private labelDisplay:eui.Label;
+                public constructor(){
+                    super();
+                    this.touchChildren = true;
+                    this.labelDisplay = new eui.Label();
+                    this.addChild( this.labelDisplay );
+                }
+                protected dataChanged():void{
+                    this.labelDisplay.text = this.data.label;
+                }
+            }
+            dataGroup.itemRenderer = LabelRenderer;
+        5、看到效果
+        6、大数据优化：useVirtualLayout = true;
+
+            DataGroup 会根据组件的尺寸，计算同时最多能显示多少个组件，根据这个数字创建一组 ItemRenderer 并循环使用。
+            当您滚动切换数据的时候，只是这一组 ItemRenderer 循环切换自己的位置和显示，这个过程是顺畅的无缝衔接的。
+            举个例子，比如 ItemRenderer 的高度是10，DataGroup 的高度是100，DataGroup 的 dataProvider 中有1000条数据。
+            这种情况下，DataGroup 中只会创建 11 个 ItemRenderer 的实例，当您向下滚动 DataGroup 的时候，移出舞台的那个 ItemRenderer 会自动移到最顶端，
+            根据下一条数据改变自己的样式，而不需要再创建一个新的实例。
+
+            显然策略2在数据量大的时候，会具备更好的性能优势。假设您有上千条数据，用策略1的话，界面估计就卡死了，
+            而用策略2的话就不存在这个问题，因为数据量的增加，并不会导致显示对象数量的增加，也不会导致重绘次数的增加。
+
+        7、 eui 的容器类比 egret.Sprite 多2个方法： getElementAt 和 numElements，他们和 getChildAt 和 numChildren 有什么区别呢？
+            numChildren 会获得具体的实例数量，而 numElements 会获得总的数据条数。
+            还用之前那个例子，ItemRenderer 的高度是10，DataGroup 的高度是100，DataGroup 的 dataProvider 中有1000条数据。
+            numChild 获得的数量是11，而 numElements 获得的数量是 1000。
+            getChildAt 可以在0-10的索引中获取具体的实例对象
+            getElementAt 可以在0-999的索引中获取虚拟布局中的元素
+
+    数组集合--yes
+        1、ArrayCollection 是 eui 中专用的一个数据封装类。
+        2、一个典型的数据展示组件的设计思路是，组件和数据相分离，给组件一个数据源，组件就按预定的方式把数据展示出来。
+        3、对于 DataGroup 、 List 这种类型的组件，它的数据源其实就是需要一个”数组”。
+        4、不用 TypeScript 中的数组直接作为这类组件的数据源的原因是：
+            普通的数组没有派发事件的能力，当数组内的数据被修改了(增删改)，组件却无法有效的获知，也无法及时更新视图上的显示内容。
+            为了解决这个问题，eui 框架需要将数组再做一层封装，做一些功能上的增强。这就是引入 ArrayCollection 的目的。
+        5、var sourceArr:any[] = [{name:"one",value:1},{name:"two",value:2}];//normal array
+           var myCollection:eui.ArrayCollection = new eui.ArrayCollection(sourceArr); //用 ArrayCollection 包装
+           myCollection.addEventListener(eui.CollectionEvent.COLLECTION_CHANGE,this.collectionChangeHandler,this);//当数据改变的时候，ArrayCollection 会派发事件
+    列表--yes
+        1、列表组件 List ，继承自 DataGroup，它和 DataGroup 的区别在于：在 List 中选中一项，会触发 ~eui.ItemTapEvent.ITEM_TAP· 事件。 List有选中项的概念，可以设置 List 中的默认选中项。
+        2、 var list = new eui.List();
+            list.dataProvider = new eui.ArrayCollection(["item1","item2","item3"]);
+            list.itemRendererSkinName = exml;
+            list.selectedIndex = 1;//设置默认选中项
+            list.addEventListener(eui.ItemTapEvent.ITEM_TAP,this.onChange,this);//监听item tap事件
+            list.allowMultipleSelection = true;//多选状态
+        3、列表配合 Scroller 使用可以实现滚动效果。
+    选项卡--yes
+        1、就是多个布局的显示与隐藏
+        2、TabBar and viewStack
+            var tabBar = new eui.TabBar();
+            var viewStack = new eui.ViewStack();
+            tabBar.dataProvider = viewStack;//通过设置 TabBar.dataProvider 等于 ViewStack 实例，来实现两者的绑定。
+        3、 TabBar and ArrayCollection
+            tabBar.dataProvider = new eui.ArrayCollection(["tab1", "tab2", "tab3"]);
+            tabBar.addEventListener(eui.ItemTapEvent.ITEM_TAP, this.onBarItemTap, this);
+    自定义项呈示器--yes
+        1、前面的章节我们介绍了 DataGroup 和 List，发现里面都用到了 ItemRenderer 。
+           它的作用实际上就是根据数据源，把当前的数据可视化的显示出来。
+           ItemRenderer 中有一个默认的属性 data ，引擎会自动把通过 dataProvider 设置的的数据赋值给 data。
+        2、 var myCollection:eui.ArrayCollection = new eui.ArrayCollection(sourceArr);
+            var dataGroup:eui.DataGroup = new eui.DataGroup();
+            dataGroup.dataProvider = myCollection;
+            this.addChild(dataGroup);
+        3、 dataGroup.itemRendererSkinName = exml;//也可以直接设置 exml 文件做为 ItemRenderer
+        4、像上面这个创建显示 DataGroup 的示例，也完全可以用一个 exml 文件实现，不需要写这么多代码。
 
 进阶技巧
-    在EXML中使用自定义组件
+    在EXML中使用自定义组件--yes
+        1、<e:Group class="skins.MyGroup" xmlns:e="http://ns.egret.com/eui" con="control.*">//con-->context
+                <con:MyButton/>
+           </e:Group>
+
+        2、首先我们要在根节点添加一个自定义的命名空间：con="control.*" ，等号之前的 con 表示命名空间前缀，这个可以随意写，只要不跟现有的前缀重名即可。
+           等号后面的部分 control.* 表示在control这个模块名下的类。
+           声明了命名空间后，就可以合法地引用自定义组件：<con:MyButton/> 表示的类就是 control.MyButton。
+           要是类不在任何模块下，可以直接声明命名空间为：local="*"，同理前缀是可以随意起的，等号后面只需要一个*即表示不含模块名。
+
+        3、这里需要说明的是，虽然EXML中可以使用直接引用自定义组件，但作为最佳实践，我们推荐尽可能避免在EXML里直接使用它。
+            因为在EXML中使用的自定义组件，对组件代码的健壮性有一定要求，才能被解析器正常实例化。
+            并且绝大多数使用自定义组件的场景，应该都会有更好的组织方式而不是直接放自定义组件进去。
+
+        4、自定义组件规范
+                1.属性必须要有默认值（赋值为null也可以），因为TS编译器会把没有默认值的属性直接优化掉，在运行时并不存在。
+                2.属性的getter方法内要判断访问的对象是否为空，确保外部任何情况下访问属性都不会报错。
+                3.组件构造函数参数必须为空，或者参数有默认值，否则无法用空构造函数实例化。
+                4.组件的构造函数内不应该有对外部业务逻辑依赖的代码，这部分代码可以转移到组件被添加到舞台的时候启动而不是实例化时。
+
+         5、输出一些警告。例如当看到#2104号警告时，就是提示你自定义组件无法单独实例化。
+
     Style使用--yes
 
 
