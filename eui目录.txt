@@ -8,7 +8,7 @@ EUI项目配置  yes
 EXML使用  yes
 
 EXML基本语法(一)   yes
-EXML基本语法(二)
+EXML基本语法(二) yes
 
 皮肤皮肤分离机制
 皮肤部件
