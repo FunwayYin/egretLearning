@@ -52,6 +52,6 @@ EXML基本语法(二) yes
 进阶技巧
 
 在EXML中使用自定义组件
-style使用
+style使用  yes
 
 
