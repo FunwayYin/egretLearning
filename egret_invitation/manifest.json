@@ -1,0 +1,36 @@
+{
+	"initial": [
+		"libs/modules/egret/egret.js",
+		"libs/modules/egret/egret.web.js",
+		"libs/modules/game/game.js",
+		"libs/modules/tween/tween.js",
+		"libs/modules/res/res.js",
+		"libs/modules/eui/eui.js",
+		"particle/bin/particle/particle.js"
+	],
+	"game": [
+		"bin-debug/Container.js",
+		"bin-debug/pages/Page.js",
+		"bin-debug/Main.js",
+		"bin-debug/particle/src/ParticleSystem.js",
+		"bin-debug/AssetAdapter.js",
+		"bin-debug/Background.js",
+		"bin-debug/ClickEffect.js",
+		"bin-debug/CONST.js",
+		"bin-debug/particle/src/GravityParticle.js",
+		"bin-debug/Foreground.js",
+		"bin-debug/LoadingUI.js",
+		"bin-debug/particle/src/GravityParticleSystem.js",
+		"bin-debug/ScrollController.js",
+		"bin-debug/SoundDisplay.js",
+		"bin-debug/ThemeAdapter.js",
+		"bin-debug/infos/Info1.js",
+		"bin-debug/infos/Info2.js",
+		"bin-debug/infos/InfoCommon.js",
+		"bin-debug/particle/src/Particle.js",
+		"bin-debug/pages/Page1.js",
+		"bin-debug/pages/Page2.js",
+		"bin-debug/pages/Page3.js",
+		"bin-debug/pages/Page4.js"
+	]
+}
