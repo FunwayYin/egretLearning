@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin width="484" height="410" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+    <w:HostComponent name="egret.gui.SkinnableComponent" />
+    <w:Declarations/>
+    <e:states>
+        <e:State name="normal" />
+        <e:State name="disabled" />
+    </e:states>
+    <e:HSlider width="180" id="hslider" x="163" y="352" />
+    <e:VSlider height="180" id="vslider" x="50" y="90" />
+    <e:UIAsset id="asset" width="179" height="154" x="247" y="139" />
+    <e:Label id="label" x="64" y="15" width="338" height="54" />
+</e:Skin>
