@@ -1,0 +1,210 @@
+1、事件类--yes
+
+    eui.CollectionEvent
+         arrayCollection.addEventListener(eui.CollectionEvent.COLLECTION_CHANGE, this.onCollectionChange, this);
+         private onCollectionChange(e: eui.CollectionEvent) {
+            egret.log(e.kind); //对应eui.CollectionEventKind常量
+         }
+
+    eui.PropertyEvent
+	    PROPERTY_CHANGE : string    属性改变
+ 		property : string           发生改变的属性名称
+
+    eui.ItemTapEvent
+	    ITEM_TAP : string itemTap           事件的对象类型
+ 		item : any                          触发触摸事件的项呈示器数据源项
+ 		itemIndex : number                  触发触摸事件的项索引
+ 		itemRenderer : eui.IItemRenderer    触发触摸事件的项呈示器
+
+    eui.UIEvent
+        CHANGE_END : string          改变结束
+        CHANGE_START : string        改变开始
+        CLOSING : string             即将关闭面板事件
+        CREATION_COMPLETE : string   组件创建完成
+        MOVE : string                UI组件在父级容器中的坐标发生改变事件
+
+    具体参数请断电打印查看
+
+2、常量类--yes
+
+    eui.CollectionEventKind  //集合事件类型
+        ADD : string       指示集合添加了一个或多个项目
+        REFRESH : string   指示集合应用了排序或/和筛选
+        REMOVE : string    指示集合删除了一个或多个项目
+        REPLACE : string   指示已替换由 CollectionEvent.location 属性确定的位置处的项目
+        RESET : string     指示集合已彻底更改，需要进行重置
+        UPDATE : string    指示集合中一个或多个项目进行了更新
+
+    eui.ColumnAlign //列对齐
+        JUSTIFY_USING_GAP : string      通过增大水平间隙将行两端对齐
+        JUSTIFY_USING_WIDTH : string    通过增大行高度将行两端对齐
+        LEFT : string                   不将行两端对齐
+
+    eui.Direction    //排列方向
+ 		BTT : string    竖直从下到上增长
+ 		LTR : string    水平从左到右增长
+ 		RTL : string    水平从右到左增长
+ 		TTB : string    竖直从上到下增长
+
+    eui.JustifyAlign   //两端对齐
+        CONTENT_JUSTIFY : string    相对于容器对子代进行内容对齐
+        JUSTIFY : string            相对于容器对齐子代
+
+    eui.RowAlign    //行对齐
+    	JUSTIFY_USING_GAP : string      通过增大垂直间隙将行两端对齐
+     	JUSTIFY_USING_HEIGHT : string   通过增大行高度将行两端对齐
+     	TOP : string                    不进行两端对齐
+
+    eui.TileOrientation //网格对齐
+    	COLUMNS : string    逐列排列元素
+     	ROWS : string       逐行排列元素
+
+    eui.ScrollPolicy  //滚蛋策略
+    	AUTO : string   如果子项超出父级的尺寸，则允许滚动，反之不允许滚动
+     	OFF : string    从不允许滚动
+     	ON : string     总是允许滚动
+
+    EXML.globalMember
+	    prefixURL : string 设置 EXML 文件加载的根路径
+
+3、接口类--70%
+
+    eui.IAssetAdapter
+        实现
+        eui.DefaultAssetAdapter
+        eui.DefaultThemeAdapter
+    eui.ICollection
+    eui.IDisplayText
+    eui.IItemRenderer
+    eui.IOverride
+    eui.IThemeAdapter
+    eui.IViewport
+
+4、普通组件--70%
+    eui.Component
+        eui.Button
+            eui.ToggleButton
+                eui.CheckBox
+                eui.RadioButton
+                    eui.RadioButtonGroup
+                eui.ToggleSwitch
+        eui.ItemRenderer
+        eui.Panel
+        eui.Rect
+        eui.Scroller
+        eui.TextInput
+        eui.Range
+            eui.ProgressBar
+            eui.SliderBase
+                eui.HSlider
+                eui.VSlider
+        eui.ScrollBarBase
+            eui.HScrollBar
+            eui.VScrollBar
+
+    Component 类定义可设置外观的组件的基类。Component 类所使用的外观通常是 Skin 类的子类。
+    通过设置 component 类的 skinName 属性，将 skin 类与 component 类相关联。
+
+    Button 组件是常用的矩形按钮。Button 组件看起来可以按压。默认外观具有一个文本标签和图标显示对象。
+
+    ItemRenderer 类是项呈示器的基类。
+
+    Panel 类定义一个容器，该容器为其子代提供标题栏、关闭按钮、可移动区域和内容区域。
+
+    Rect 组件矩形绘图元素。此组件可响应鼠标事件。
+
+    Scroller 组件显示一个称为视域的单个可滚动组件，以及水平滚动条和垂直滚动条。该视域必须实现 IViewport 接口。
+    Group 组件实现 IViewport 接口，且可以用作 Scroller 控件的子代
+
+    TextInput 是一个文本输入控件，供用户输入和编辑统一格式文本
+
+    范围选取组件,该组件包含一个值和这个值所允许的最大最小约束范围。
+    value属性的值永远被限制于当前的minimum和maximum之间，并且minimum和 maximum永远按照固定的顺序排列，即(minimum <= value <= maximum) 为真。
+    如果snapInterval属性的值不是0，那么value的值也会被snapInterval所约束。
+
+5、数据组合--70%
+    eui.Group
+        eui.DataGroup
+            eui.ListBase
+                eui.List
+                eui.TabBar
+        eui.UILayer
+        eui.ViewStack
+
+    Group 是自动布局的容器基类。如果包含的子项内容太大需要滚动显示，可以在在 Group 外部包裹一层 Scroller 组件
+    (将 Group 实例赋值给 Scroller 组件的 viewport 属性)。Scroller 会为 Group 添加滚动的触摸操作功能，并显示垂直或水平的滚动条。
+
+    DataGroup 类将数据项目转换为可视元素以进行显示。尽管此容器可以包含可视元素，但它通常仅用于包含作为子项的数据项目。
+
+    UILayer 是 Group 的子类，它除了具有容器的所有标准功能，还能够自动保持自身尺寸始终与舞台尺寸相同（Stage.stageWidth,Stage.stageHeight）。
+    当舞台尺寸发生改变时，它会跟随舞台尺寸改变。UILayer 跟普通容器一样，允许创建多个实例，但通常都将它作为UI显示列表的根节点使用。
+
+    ViewStack 导航器容器由一组彼此上下堆叠的子容器组成，其中一次只可以显示一个子容器。
+    选择另一个子容器后，它将显示在原来子容器的位置处，所以看起来好像此子容器替换了原来的子容器。
+    但是，原来的子容器仍然存在，只不过它现在处于不可见状态。
+
+6、布局--70%
+    eui.LayoutBase
+        eui.BasicLayout
+        eui.TileLayout
+        eui.LinearLayoutBase
+            eui.HorizontalLayout
+            eui.VerticalLayout
+
+    容器布局基类。若要创建使用 Group 容器的自定义布局，必须扩展 LayoutBase 或其子类之一。
+        子类必须实现
+            updateDisplayList() 方法（定位 target Group 的子项并调整这些子项的大小）
+            measure() 方法（计算 target 的默认大小）。
+
+7、其他--70%
+
+    eui.BitmapLabel
+        BitmapLabel 组件是一行或多行不可编辑的位图文本
+
+    eui.Label
+        Label 是可以呈示一行或多行统一格式文本的UI组件。要显示的文本由 text 属性确定。
+        文本格式由样式属性指定，例如 fontFamily 和 size。因为 Label 运行速度快且占用内存少，所以它特别适合用于显示多个小型非交互式文本的情况，例如，项呈示器和 Button 外观中的标签。
+        在 Label 中，将以下三个字符序列识别为显式换行符：CR（“\r”）、LF（“\n”）和 CR+LF（“\r\n”）。
+        如果没有为 Label 指定宽度，则由这些显式换行符确定的最长行确定 Label 的宽度。
+        如果指定了宽度，则指定文本将在组件边界的右边缘换行，如果文本扩展到低于组件底部，则将被剪切。
+
+    eui.Image
+        Image 控件允许您在运行时显示 JPEG、PNG 等图片文件文件。
+        Image 继承至 Bitmap，因此您可以直接对其 bitmapData 属性，赋值从外部加载得到的位图数据以显示对应图片。
+        同时，Image 还提供了更加方便的 source 属性，source 属性可以接受一个网络图片url作为值，赋值为url后，它内部会自动去加载并显示图片。并且您同样也可以直接把 BitmapData 对象赋值给 source 属性以显示图片。
+
+    eui.Skin
+        皮肤基类。通常情况下，您不需要手动创建这个类的实例，而是通过解析EXML文件后自动生成。
+
+    eui.Theme
+        皮肤主题。注意：皮肤主题是一次性设置的默认值,并不能运行时切换所有组件默认皮肤。切换单个皮肤您可以自行对Component.skinName赋值来修改。
+
+    eui.State
+        State 类定义视图状态，即组件的特定视图。例如，产品缩略图可以有两个视图状态，包含最少信息的基本视图状态和包含附加信息的丰富视图状态。
+
+    eui.Watcher
+        Watcher 类能够监视可绑定属性的改变，您可以定义一个事件处理函数作为 Watcher 的回调方法，在每次可绑定属性的值改变时都执行此函数。
+
+    eui.ArrayCollection
+        ArrayCollection 类是数组的集合类数据结构包装器，可使用ICollection接口的方法和属性对其进行访问和处理。
+        使用这种数据结构包装普通数组，能在数据源发生改变的时候主动通知视图刷新变更数据项。
+
+    eui.Binding
+        绑定工具类，用于执行数据绑定用的方法集。您可以使用此类中定义的方法来配置数据绑定。
+
+    eui.SetProperty
+        SetProperty 类指定只在父视图状态期间有效的属性值。可以在 State 类的 overrides 属性中使用该类。
+
+    eui.SetStateProperty
+        SetProperty 类指定只在父视图状态期间有效的属性值。可以在 State 类的 overrides 属性中使用该类。
+
+    eui.UIComponent
+        UIComponent 类是所有可视组件（可定制皮肤和不可定制皮肤）的基类。
+
+    eui.AddItems
+        视图添加状态显示元素操作
+
+    eui.全局函数
+
+    EXML.全局函数
+
