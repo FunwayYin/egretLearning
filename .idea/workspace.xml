@@ -1,0 +1,1656 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="626e7f04-2264-42fa-842a-bdf4bded9d94" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/README.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/logo.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/libs/modules/egret/egret.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/libs/modules/egret/egret.web.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/libs/modules/eui/eui.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/libs/modules/res/res.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/libs/modules/tween/tween.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/main.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/art/about/about-bg.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/art/about/about.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/art/about/close.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/art/heros_goods/bgListPage.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/art/heros_goods/btnOK.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/art/heros_goods/checkNo.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/art/heros_goods/checked.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/art/heros_goods/goods01.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/art/heros_goods/goods02.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/art/heros_goods/goods03.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/art/heros_goods/goods04.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/art/heros_goods/goods05.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/art/heros_goods/goods06.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/art/heros_goods/goods07.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/art/heros_goods/goodsTitle.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/art/heros_goods/hScrollBar01.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/art/heros_goods/hScrollBar02.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/art/heros_goods/heros01.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/art/heros_goods/heros02.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/art/heros_goods/heros03.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/art/heros_goods/heros04.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/art/heros_goods/heros05.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/art/heros_goods/heros06.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/art/heros_goods/heros07.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/art/heros_goods/herosTitle.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/art/heros_goods/listItemBkgd.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/art/home/commonBg.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/art/home/homeBg.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/art/loading/loading.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/art/loading/loading2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/art/loading/toast-bg.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/art/profile/btnEquip.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/art/profile/btnReturn.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/art/profile/btnStrengthen.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/art/profile/mbtnAbout.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/art/profile/mbtnGoods.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/art/profile/mbtnHero.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/art/profile/mbtnPlayer.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/art/profile/mbtn_Bg.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/art/profile/mbtn_BgFc.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/art/profile/profileContent.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/art/profile/profileTitle.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/art/profile/skillBg.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/art/profile/skillIcon01.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/art/profile/skillIcon02.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/art/profile/skillIcon03.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/art/profile/skillIcon04.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/art/profile/skillIcon05.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/art/profile/skillIcon06.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/art/profile/skillIcon07.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/art/profile/skillItemFrame.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/assets/Button/button_down.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/assets/Button/button_up.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/assets/CheckBox/checkbox_select_disabled.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/assets/CheckBox/checkbox_select_down.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/assets/CheckBox/checkbox_select_up.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/assets/CheckBox/checkbox_unselect.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/assets/ItemRenderer/selected.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/assets/Panel/border.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/assets/Panel/header.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/assets/ProgressBar/thumb_pb.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/assets/ProgressBar/track_pb.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/assets/RadioButton/radiobutton_select_disabled.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/assets/RadioButton/radiobutton_select_down.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/assets/RadioButton/radiobutton_select_up.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/assets/RadioButton/radiobutton_unselect.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/assets/ScrollBar/roundthumb.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/assets/ScrollBar/track_sb.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/assets/Slider/thumb.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/assets/Slider/track.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/assets/Slider/tracklight.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/assets/ToggleSwitch/handle.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/assets/ToggleSwitch/off.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/assets/ToggleSwitch/on.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/custom_skins/aboutUISkin.exml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/custom_skins/goodsListIRSkin.exml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/custom_skins/goodsUISkin.exml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/custom_skins/herosListIRSkin.exml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/custom_skins/herosUISkin.exml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/custom_skins/homeUISkin.exml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/custom_skins/profileSkillListIRSkin.exml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/custom_skins/profileUISkin.exml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/default.res.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/default.thm.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/eui_skins/ButtonSkin.exml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/eui_skins/CheckBoxSkin.exml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/eui_skins/HScrollBarSkin.exml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/eui_skins/HSliderSkin.exml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/eui_skins/ItemRendererSkin.exml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/eui_skins/PanelSkin.exml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/eui_skins/ProgressBarSkin.exml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/eui_skins/RadioButtonSkin.exml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/eui_skins/ScrollerSkin.exml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/eui_skins/TextInputSkin.exml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/eui_skins/ToggleSwitchSkin.exml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/eui_skins/VScrollBarSkin.exml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/release/resource/eui_skins/VSliderSkin.exml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/bin-debug/GameEvents.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/bin-debug/GamePages.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/bin-debug/HomeUI.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/bin-debug/LoadingUI.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/bin-debug/Main.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/bin-debug/Toast.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/bin-debug/TrueLoadingUI.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/bin-debug/euisys/AssetAdapter.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/bin-debug/euisys/ThemeAdapter.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/bin-debug/part/AboutUI.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/bin-debug/part/GoodsUI.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/bin-debug/part/HerosUI.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/bin-debug/part/ProfileUI.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/egretProperties.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/libs/exml.e.d.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/libs/modules/egret/egret.d.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/libs/modules/egret/egret.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/libs/modules/egret/egret.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/libs/modules/egret/egret.native.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/libs/modules/egret/egret.native.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/libs/modules/egret/egret.web.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/libs/modules/egret/egret.web.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/libs/modules/eui/eui.d.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/libs/modules/eui/eui.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/libs/modules/eui/eui.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/libs/modules/res/res.d.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/libs/modules/res/res.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/libs/modules/res/res.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/libs/modules/tween/tween.d.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/libs/modules/tween/tween.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/libs/modules/tween/tween.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/art/about/about-bg.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/art/about/about.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/art/about/close.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/art/heros_goods/bgListPage.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/art/heros_goods/btnOK.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/art/heros_goods/checkNo.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/art/heros_goods/checked.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/art/heros_goods/goods01.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/art/heros_goods/goods02.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/art/heros_goods/goods03.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/art/heros_goods/goods04.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/art/heros_goods/goods05.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/art/heros_goods/goods06.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/art/heros_goods/goods07.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/art/heros_goods/goodsTitle.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/art/heros_goods/hScrollBar01.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/art/heros_goods/hScrollBar02.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/art/heros_goods/heros01.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/art/heros_goods/heros02.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/art/heros_goods/heros03.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/art/heros_goods/heros04.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/art/heros_goods/heros05.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/art/heros_goods/heros06.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/art/heros_goods/heros07.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/art/heros_goods/herosTitle.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/art/heros_goods/listItemBkgd.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/art/home/commonBg.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/art/home/homeBg.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/art/loading/loading.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/art/loading/loading2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/art/loading/toast-bg.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/art/profile/btnEquip.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/art/profile/btnReturn.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/art/profile/btnStrengthen.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/art/profile/mbtnAbout.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/art/profile/mbtnGoods.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/art/profile/mbtnHero.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/art/profile/mbtnPlayer.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/art/profile/mbtn_Bg.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/art/profile/mbtn_BgFc.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/art/profile/profileContent.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/art/profile/profileTitle.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/art/profile/skillBg.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/art/profile/skillIcon01.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/art/profile/skillIcon02.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/art/profile/skillIcon03.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/art/profile/skillIcon04.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/art/profile/skillIcon05.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/art/profile/skillIcon06.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/art/profile/skillIcon07.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/art/profile/skillItemFrame.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/assets/Button/button_down.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/assets/Button/button_up.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/assets/CheckBox/checkbox_select_disabled.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/assets/CheckBox/checkbox_select_down.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/assets/CheckBox/checkbox_select_up.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/assets/CheckBox/checkbox_unselect.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/assets/ItemRenderer/selected.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/assets/Panel/border.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/assets/Panel/header.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/assets/ProgressBar/thumb_pb.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/assets/ProgressBar/track_pb.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/assets/RadioButton/radiobutton_select_disabled.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/assets/RadioButton/radiobutton_select_down.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/assets/RadioButton/radiobutton_select_up.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/assets/RadioButton/radiobutton_unselect.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/assets/ScrollBar/roundthumb.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/assets/ScrollBar/track_sb.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/assets/Slider/thumb.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/assets/Slider/track.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/assets/Slider/tracklight.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/assets/ToggleSwitch/handle.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/assets/ToggleSwitch/off.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/assets/ToggleSwitch/on.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/custom_skins/aboutUISkin.exml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/custom_skins/goodsListIRSkin.exml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/custom_skins/goodsUISkin.exml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/custom_skins/herosListIRSkin.exml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/custom_skins/herosUISkin.exml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/custom_skins/homeUISkin.exml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/custom_skins/profileSkillListIRSkin.exml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/custom_skins/profileUISkin.exml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/default.res.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/default.thm.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/eui_skins/ButtonSkin.exml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/eui_skins/CheckBoxSkin.exml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/eui_skins/HScrollBarSkin.exml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/eui_skins/HSliderSkin.exml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/eui_skins/ItemRendererSkin.exml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/eui_skins/PanelSkin.exml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/eui_skins/ProgressBarSkin.exml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/eui_skins/RadioButtonSkin.exml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/eui_skins/ScrollerSkin.exml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/eui_skins/TextInputSkin.exml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/eui_skins/ToggleSwitchSkin.exml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/eui_skins/VScrollBarSkin.exml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/resource/eui_skins/VSliderSkin.exml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/src/GameEvents.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/src/GamePages.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/src/HomeUI.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/src/LoadingUI.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/src/Main.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/src/Toast.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/src/TrueLoadingUI.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/src/euisys/AssetAdapter.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/src/euisys/ThemeAdapter.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/src/part/AboutUI.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/src/part/GoodsUI.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/src/part/HerosUI.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/src/part/ProfileUI.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/template/runtime/native_loader.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/template/runtime/native_require.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/CardGameDemoEUI/source/template/runtime/runtime_loader.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/logo.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/readme.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/libs/modules/egret/egret.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/libs/modules/egret/egret.web.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/libs/modules/game/game.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/libs/modules/game/game.web.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/libs/modules/res/res.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/libs/modules/tween/tween.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/main.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/alpha_bg_h.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/barNum1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/barNum2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/barNum3.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/barNum4.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/binggan1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/binggan2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/btnfenxiang.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/btngengduoyouxi.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/btnzailaiyici.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/closeGame_btn.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/cutTwo.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/egret_icon.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/endPopup_frame.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/game1btn1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/game1btn2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/game1btn3.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/game2btn1_1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/game2btn1_2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/game2btn2_1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/game2btn2_2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/game2btn3_1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/game2btn3_2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/game4btn1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/game4btn2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/game4btn3.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/gameOver1.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/gameOver2.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/gameOver3.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/gameOver4.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/gameOverbg.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/gameWin.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/game_info_01.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/game_ui_lineframe.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/gameinfo.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/gameinfo_1.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/gameinfo_2.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/gameinfo_3.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/gameinfo_4.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/gaming_bg.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/gamingbar.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/gamingbarMask.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/gengduo.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/go.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/guanka001/guanka001.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/guanka001/guanka001.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/guanka001/guanka001_swf.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/guanka002/guanka002.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/guanka002/guanka002.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/guanka002/guanka002_swf.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/guanka003/guanka003.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/guanka003/guanka003.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/guanka003/guanka003_swf.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/guanka004/guanka004.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/guanka004/guanka004.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/guanka004/guanka004_swf.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/help_btn.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/kuang/kuang.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/kuang/kuang.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/kuang/kuang_swf.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/load_bg.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/loading_bg.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/loading_logo.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/music_btn.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/newAssets.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/newAssets.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/number/sorceNum.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/number/sorceNum.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/number/timerNum.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/number/timerNum.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/nvren/nvren.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/nvren/nvren.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/nvren/nvren_swf.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/optionBgImage.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/option_03.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/option_05.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/option_06.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/option_07.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/option_bg.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/option_btn_b.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/ready.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/right.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/scene2View.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/scene3View.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/scene4_gameViewbg.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/share.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/sorcebar.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/sound/sound_bg.mp3" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/sound/sound_clear.mp3" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/sound/sound_click.mp3" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/sound/sound_correct.mp3" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/sound/sound_end.mp3" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/sound/sound_error.mp3" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/sound/sound_gameover.mp3" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/sound/sound_go.mp3" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/sound/sound_ready.mp3" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/sound/sound_readygo.mp3" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/sound/sound_semiclear.mp3" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/sound/sound_timewarning.mp3" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/startGame1_btn.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/startGame_btn.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/start_btn.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/ui_item_gauge_0001.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/ui_item_gauge_0002.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/ui_item_gauge_0003.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/weixian.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/word-1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/word-2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/assets/worng.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/config/description.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/default.res.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/release/resource/resource.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/bin-debug/AlertPanel.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/bin-debug/GameData.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/bin-debug/LoadingUI.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/bin-debug/Main.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/bin-debug/MusicView.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/bin-debug/game/GameScene/AddTimeMenu.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/bin-debug/game/GameScene/GameFightFourScene.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/bin-debug/game/GameScene/GameFightOneScene.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/bin-debug/game/GameScene/GameFightThreeScene.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/bin-debug/game/GameScene/GameFightTwoScene.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/bin-debug/game/GameScene/GameLayer.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/bin-debug/game/GameScene/GameOverView.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/bin-debug/game/GameScene/GameStartView.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/bin-debug/game/GameScene/GameingSceneView.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/bin-debug/game/GameScene/ShareView.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/bin-debug/game/GameSceneView.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/bin-debug/game/HelpView.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/bin-debug/game/SoundPopView.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/bin-debug/game/utils/Button.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/bin-debug/game/utils/ButtonSkin.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/bin-debug/game/utils/Const.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/bin-debug/game/utils/GS.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/bin-debug/game/utils/GameUtils.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/bin-debug/game/utils/GameVO.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/bin-debug/game/utils/MyButton.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/bin-debug/game/utils/MyButtonForGame.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/bin-debug/game/utils/ResourceUtils.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/bin-debug/game/utils/ShareUtils.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/bin-debug/game/utils/SoundBase.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/bin-debug/game/utils/SoundUtils.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/bin-debug/game/utils/SpecialNumber.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/bin-debug/starlingswf/StarlingSwfSheetAnalyzer.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/bin-debug/starlingswf/Swf.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/bin-debug/starlingswf/SwfAnimationInfo.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/bin-debug/starlingswf/SwfAssetManager.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/bin-debug/starlingswf/SwfFrameInfo.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/bin-debug/starlingswf/SwfUpdateManager.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/bin-debug/starlingswf/display/ISwfAnimation.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/bin-debug/starlingswf/display/StarlingSwfMovieClip.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/bin-debug/starlingswf/display/SwfMovieClip.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/bin-debug/starlingswf/display/SwfSprite.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/bin-debug/starlingswf/game/StarlingSwfFactory.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/bin-debug/starlingswf/game/StarlingSwfMovieClip.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/bin-debug/starlingswf/game/StarlingSwfUtils.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/egretProperties.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/favicon.ico" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/libs/modules/egret/egret.d.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/libs/modules/egret/egret.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/libs/modules/egret/egret.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/libs/modules/egret/egret.native.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/libs/modules/egret/egret.native.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/libs/modules/egret/egret.web.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/libs/modules/egret/egret.web.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/libs/modules/game/game.d.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/libs/modules/game/game.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/libs/modules/game/game.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/libs/modules/game/game.native.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/libs/modules/game/game.native.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/libs/modules/game/game.web.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/libs/modules/game/game.web.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/libs/modules/res/res.d.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/libs/modules/res/res.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/libs/modules/res/res.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/libs/modules/tween/tween.d.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/libs/modules/tween/tween.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/libs/modules/tween/tween.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/alpha_bg_h.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/barNum1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/barNum2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/barNum3.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/barNum4.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/binggan1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/binggan2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/btnfenxiang.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/btngengduoyouxi.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/btnzailaiyici.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/closeGame_btn.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/cutTwo.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/egret_icon.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/endPopup_frame.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/game1btn1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/game1btn2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/game1btn3.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/game2btn1_1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/game2btn1_2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/game2btn2_1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/game2btn2_2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/game2btn3_1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/game2btn3_2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/game4btn1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/game4btn2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/game4btn3.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/gameOver1.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/gameOver2.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/gameOver3.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/gameOver4.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/gameOverbg.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/gameWin.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/game_info_01.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/game_ui_lineframe.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/gameinfo.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/gameinfo_1.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/gameinfo_2.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/gameinfo_3.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/gameinfo_4.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/gaming_bg.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/gamingbar.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/gamingbarMask.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/gengduo.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/go.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/guanka001/guanka001.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/guanka001/guanka001.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/guanka001/guanka001_swf.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/guanka002/guanka002.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/guanka002/guanka002.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/guanka002/guanka002_swf.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/guanka003/guanka003.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/guanka003/guanka003.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/guanka003/guanka003_swf.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/guanka004/guanka004.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/guanka004/guanka004.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/guanka004/guanka004_swf.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/help_btn.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/kuang/kuang.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/kuang/kuang.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/kuang/kuang_swf.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/load_bg.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/loading_bg.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/loading_logo.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/music_btn.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/newAssets.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/newAssets.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/number/sorceNum.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/number/sorceNum.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/number/timerNum.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/number/timerNum.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/nvren/nvren.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/nvren/nvren.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/nvren/nvren_swf.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/optionBgImage.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/option_03.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/option_05.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/option_06.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/option_07.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/option_bg.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/option_btn_b.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/ready.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/right.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/scene2View.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/scene3View.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/scene4_gameViewbg.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/share.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/sorcebar.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/sound/sound_bg.mp3" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/sound/sound_clear.mp3" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/sound/sound_click.mp3" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/sound/sound_correct.mp3" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/sound/sound_end.mp3" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/sound/sound_error.mp3" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/sound/sound_gameover.mp3" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/sound/sound_go.mp3" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/sound/sound_ready.mp3" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/sound/sound_readygo.mp3" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/sound/sound_semiclear.mp3" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/sound/sound_timewarning.mp3" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/startGame1_btn.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/startGame_btn.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/start_btn.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/ui_item_gauge_0001.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/ui_item_gauge_0002.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/ui_item_gauge_0003.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/weixian.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/word-1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/word-2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/assets/worng.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/config/description.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/default.res.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/resource/resource.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/src/AlertPanel.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/src/GameData.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/src/LoadingUI.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/src/Main.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/src/MusicView.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/src/game/GameScene/AddTimeMenu.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/src/game/GameScene/GameFightFourScene.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/src/game/GameScene/GameFightOneScene.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/src/game/GameScene/GameFightThreeScene.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/src/game/GameScene/GameFightTwoScene.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/src/game/GameScene/GameLayer.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/src/game/GameScene/GameOverView.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/src/game/GameScene/GameStartView.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/src/game/GameScene/GameingSceneView.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/src/game/GameScene/ShareView.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/src/game/GameSceneView.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/src/game/HelpView.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/src/game/SoundPopView.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/src/game/utils/Button.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/src/game/utils/ButtonSkin.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/src/game/utils/Const.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/src/game/utils/GS.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/src/game/utils/GameUtils.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/src/game/utils/GameVO.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/src/game/utils/MyButton.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/src/game/utils/MyButtonForGame.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/src/game/utils/ResourceUtils.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/src/game/utils/ShareUtils.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/src/game/utils/SoundBase.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/src/game/utils/SoundUtils.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/src/game/utils/SpecialNumber.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/src/starlingswf/StarlingSwfSheetAnalyzer.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/src/starlingswf/Swf.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/src/starlingswf/SwfAnimationInfo.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/src/starlingswf/SwfAssetManager.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/src/starlingswf/SwfFrameInfo.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/src/starlingswf/SwfUpdateManager.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/src/starlingswf/display/ISwfAnimation.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/src/starlingswf/display/StarlingSwfMovieClip.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/src/starlingswf/display/SwfMovieClip.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/src/starlingswf/display/SwfSprite.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/src/starlingswf/game/StarlingSwfFactory.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/src/starlingswf/game/StarlingSwfMovieClip.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/src/starlingswf/game/StarlingSwfUtils.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/template/runtime/native_loader.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/template/runtime/native_require.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/HappyKitchen/source/template/runtime/runtime_loader.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/.vscode/tasks.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/.wing/launch.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/.wing/settings.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/.wing/tasks.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/bin-debug/AssetAdapter.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/bin-debug/AssetAdapter.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/bin-debug/LoadingUI.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/bin-debug/LoadingUI.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/bin-debug/Main.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/bin-debug/Main.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/bin-debug/TestShader.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/bin-debug/TestShader.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/bin-debug/ThemeAdapter.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/bin-debug/ThemeAdapter.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/egretProperties.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/favicon.ico" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/libs/exml.e.d.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/libs/modules/dragonBones/dragonBones.d.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/libs/modules/dragonBones/dragonBones.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/libs/modules/dragonBones/dragonBones.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/libs/modules/egret/egret.d.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/libs/modules/egret/egret.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/libs/modules/egret/egret.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/libs/modules/egret/egret.native.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/libs/modules/egret/egret.native.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/libs/modules/egret/egret.web.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/libs/modules/egret/egret.web.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/libs/modules/egret3d/egret3d.d.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/libs/modules/egret3d/egret3d.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/libs/modules/egret3d/egret3d.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/libs/modules/eui/eui.d.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/libs/modules/eui/eui.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/libs/modules/eui/eui.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/libs/modules/game/game.d.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/libs/modules/game/game.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/libs/modules/game/game.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/libs/modules/res/res.d.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/libs/modules/res/res.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/libs/modules/res/res.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/libs/modules/socket/socket.d.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/libs/modules/socket/socket.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/libs/modules/socket/socket.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/libs/modules/tween/tween.d.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/libs/modules/tween/tween.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/libs/modules/tween/tween.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/manifest.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/promise/bin/promise.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/promise/bin/promise.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/resource/assets/Button/button_down.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/resource/assets/Button/button_up.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/resource/assets/CheckBox/checkbox_select_disabled.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/resource/assets/CheckBox/checkbox_select_down.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/resource/assets/CheckBox/checkbox_select_up.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/resource/assets/CheckBox/checkbox_unselect.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/resource/assets/ItemRenderer/selected.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/resource/assets/Panel/border.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/resource/assets/Panel/header.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/resource/assets/ProgressBar/thumb_pb.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/resource/assets/ProgressBar/track_pb.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/resource/assets/RadioButton/radiobutton_select_disabled.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/resource/assets/RadioButton/radiobutton_select_down.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/resource/assets/RadioButton/radiobutton_select_up.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/resource/assets/RadioButton/radiobutton_unselect.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/resource/assets/ScrollBar/roundthumb.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/resource/assets/ScrollBar/track_sb.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/resource/assets/Slider/thumb.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/resource/assets/Slider/track.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/resource/assets/Slider/tracklight.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/resource/assets/ToggleSwitch/handle.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/resource/assets/ToggleSwitch/off.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/resource/assets/ToggleSwitch/on.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/resource/assets/bg.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/resource/assets/egret_icon.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/resource/assets/poke0.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/resource/assets/poke13.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/resource/config/description.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/resource/default.res.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/resource/default.thm.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/resource/eui_skins/ButtonSkin.exml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/resource/eui_skins/CheckBoxSkin.exml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/resource/eui_skins/GamePanelSkin.exml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/resource/eui_skins/HScrollBarSkin.exml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/resource/eui_skins/HSliderSkin.exml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/resource/eui_skins/ItemRendererSkin.exml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/resource/eui_skins/PanelSkin.exml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/resource/eui_skins/ProgressBarSkin.exml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/resource/eui_skins/RadioButtonSkin.exml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/resource/eui_skins/ScrollerSkin.exml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/resource/eui_skins/TextInputSkin.exml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/resource/eui_skins/ToggleSwitchSkin.exml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/resource/eui_skins/VScrollBarSkin.exml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/resource/eui_skins/VSliderSkin.exml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/src/AssetAdapter.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/src/LoadingUI.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/src/Main.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/src/TestShader.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/src/ThemeAdapter.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/template/runtime/native_loader.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/template/runtime/native_require.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/template/runtime/runtime_loader.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/template/web/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/tsconfig.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Test3D/wingProperties.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/.idea/egret_invitation.iml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/.idea/modules.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/.idea/workspace.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/.vscode/tasks.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/.wing/launch.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/.wing/tasks.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/bin-debug/particle/src/GravityParticle.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/bin-debug/particle/src/GravityParticleSystem.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/bin-debug/particle/src/Particle.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/bin-debug/particle/src/ParticleSystem.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/bin-debug/src/AssetAdapter.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/bin-debug/src/Background.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/bin-debug/src/CONST.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/bin-debug/src/ClickEffect.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/bin-debug/src/Container.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/bin-debug/src/Foreground.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/bin-debug/src/LoadingUI.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/bin-debug/src/Main.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/bin-debug/src/ScrollController.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/bin-debug/src/SoundDisplay.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/bin-debug/src/ThemeAdapter.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/bin-debug/src/infos/Info1.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/bin-debug/src/infos/Info2.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/bin-debug/src/infos/InfoCommon.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/bin-debug/src/pages/Page.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/bin-debug/src/pages/Page1.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/bin-debug/src/pages/Page2.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/bin-debug/src/pages/Page3.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/bin-debug/src/pages/Page4.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/egretProperties.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/favicon.ico" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/index.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/libs/exml.e.d.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/libs/modules/egret/egret.d.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/libs/modules/egret/egret.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/libs/modules/egret/egret.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/libs/modules/egret/egret.native.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/libs/modules/egret/egret.native.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/libs/modules/egret/egret.web.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/libs/modules/egret/egret.web.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/libs/modules/eui/eui.d.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/libs/modules/eui/eui.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/libs/modules/eui/eui.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/libs/modules/game/game.d.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/libs/modules/game/game.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/libs/modules/game/game.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/libs/modules/res/res.d.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/libs/modules/res/res.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/libs/modules/res/res.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/libs/modules/tween/tween.d.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/libs/modules/tween/tween.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/libs/modules/tween/tween.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/libs/particle.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/libs/particle.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/libs/shareicon.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/libs/wx.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/manifest.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/particle/bin/particle/particle.d.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/particle/bin/particle/particle.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/particle/bin/particle/particle.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/particle/libs/egret.d.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/particle/libs/game.d.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/particle/package.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/particle/src/GravityParticle.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/particle/src/GravityParticleSystem.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/particle/src/Particle.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/particle/src/ParticleSystem.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/bg.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/font.fnt" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/font.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/foreground_1/foreground_1_1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/foreground_1/foreground_1_2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/foreground_1/foreground_1_3.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/foreground_1/foreground_1_4.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/foreground_1/foreground_1_5.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/foreground_2/foreground_2_1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/foreground_2/foreground_2_2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/foreground_2/foreground_2_3.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/foreground_2/foreground_2_4.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/foreground_2/foreground_2_5.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/foreground_3/foreground_3_1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/foreground_3/foreground_3_2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/foreground_3/foreground_3_3.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/foreground_3/foreground_3_4.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/foreground_3/foreground_3_5.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/foreground_4/foreground_4_1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/foreground_5/foreground_5_1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/foreground_5/foreground_5_2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/foreground_5/foreground_5_3.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/foreground_5/foreground_5_4.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/foreground_5/foreground_5_5.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/foreground_6/foreground_6_1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/foreground_6/foreground_6_2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/foreground_6/foreground_6_3.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/foreground_6/foreground_6_4.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/foreground_6/foreground_6_5.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/btn_close.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/btn_off.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/btn_on.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h10.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h100.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h101.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h102.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h103.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h104.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h105.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h106.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h107.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h108.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h109.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h11.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h110.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h111.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h112.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h113.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h114.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h115.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h116.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h117.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h118.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h119.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h12.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h120.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h121.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h122.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h123.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h124.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h125.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h126.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h127.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h128.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h129.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h13.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h14.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h15.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h16.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h17.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h18.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h19.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h20.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h21.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h22.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h23.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h24.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h25.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h26.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h27.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h28.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h29.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h3.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h30.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h31.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h32.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h33.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h34.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h35.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h36.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h37.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h38.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h39.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h4.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h40.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h41.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h42.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h43.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h44.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h45.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h46.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h47.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h48.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h49.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h5.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h50.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h51.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h52.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h53.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h54.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h55.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h56.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h57.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h58.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h59.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h6.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h60.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h61.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h62.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h63.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h64.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h65.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h66.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h67.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h68.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h69.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h7.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h70.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h71.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h72.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h73.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h74.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h75.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h76.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h77.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h78.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h79.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h8.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h80.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h81.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h82.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h83.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h84.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h85.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h86.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h87.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h88.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h89.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h9.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h90.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h91.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h92.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h93.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h94.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h95.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h96.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h97.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h98.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/h/h99.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/info_1_title.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w10.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w100.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w101.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w102.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w103.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w104.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w105.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w106.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w107.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w108.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w109.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w11.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w110.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w111.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w112.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w113.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w114.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w115.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w116.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w117.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w118.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w119.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w12.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w120.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w121.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w122.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w123.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w124.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w125.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w126.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w127.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w128.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w129.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w13.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w14.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w15.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w16.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w17.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w18.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w19.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w20.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w21.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w22.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w23.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w24.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w25.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w26.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w27.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w28.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w29.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w3.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w30.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w31.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w32.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w33.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w34.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w35.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w36.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w37.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w38.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w39.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w4.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w40.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w41.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w42.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w43.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w44.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w45.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w46.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w47.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w48.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w49.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w5.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w50.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w51.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w52.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w53.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w54.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w55.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w56.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w57.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w58.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w59.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w6.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w60.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w61.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w62.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w63.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w64.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w65.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w66.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w67.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w68.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w69.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w7.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w70.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w71.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w72.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w73.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w74.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w75.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w76.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w77.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w78.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w79.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w8.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w80.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w81.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w82.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w83.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w84.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w85.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w86.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w87.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w88.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w89.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w9.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w90.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w91.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w92.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w93.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w94.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w95.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w96.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w97.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w98.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_1/w/w99.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_2/btn_choose1_off.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_2/btn_choose1_on.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_2/btn_choose2_off.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_2/btn_choose2_on.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_2/btn_choose3_off.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_2/btn_choose3_on.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_2/btn_choose4_off.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_2/btn_choose4_on.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_2/btn_choose5_off.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_2/btn_choose5_on.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_2/info_2_detail_1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_2/info_2_detail_2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_2/info_2_detail_3.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_2/info_2_detail_4.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_2/info_2_detail_5.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_2/info_2_title.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/infos/info_bg.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/loading.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/loading.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/loading_support.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/mp3.mp3" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/page3/page_3_logo1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/page3/page_3_logo2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/page3/page_3_part1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/page3/page_3_part2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/page3/page_3_part3.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/page3/page_3_part4.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/page3/page_3_part5.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/page3/page_3_part6.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/page3/page_3_part7.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/page3/page_3_part8.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/page3/page_3_part9.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/page3/page_3_word1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/page3/page_3_word2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/page3/page_3_word3.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/page4/page_4_logo.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/page4/page_4_logo1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/page4/page_4_logo2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/page4/page_4_logo3.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/page4/page_4_part1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/page4/page_4_part2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/page4/page_4_part3.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/page4/page_4_part4.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/page4/page_4_part5.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/page4/page_4_part6.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/page4/page_4_part7.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/page4/page_4_part8.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/page4/page_4_word1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/page4/page_4_word2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/page4/page_4_word3.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/page_1/page_1_bg.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/page_1/page_1_hand.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/page_1/page_1_word1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/page_1/page_1_word2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/page_1/page_1_word3.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/page_1/page_1_word_countdown.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/page_1/page_1_word_day.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/page_2/page_2_bg.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/page_2/page_2_word1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/page_2/page_2_word2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/page_2/page_2_word3.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/page_front_line.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/particle.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/particle.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/sound_off.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/sound_on.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/stage/stage_part1.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/stage/stage_part2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/stage/stage_part3.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/stage/stage_part4.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/stage/stage_part5.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/assets/stage/stage_part6.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/default.res.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/default.thm.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/eui_skins/CloseButtonSkin.exml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/eui_skins/Info1.exml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/eui_skins/Info2.exml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/eui_skins/InfoCommon.exml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/resource/res.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/src/AssetAdapter.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/src/Background.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/src/CONST.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/src/ClickEffect.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/src/Container.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/src/Foreground.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/src/LoadingUI.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/src/Main.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/src/ScrollController.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/src/SoundDisplay.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/src/ThemeAdapter.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/src/infos/Info1.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/src/infos/Info2.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/src/infos/InfoCommon.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/src/pages/Page.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/src/pages/Page1.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/src/pages/Page2.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/src/pages/Page3.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/src/pages/Page4.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/template/runtime/native_loader.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/template/runtime/native_require.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/template/runtime/runtime_loader.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/tsconfig.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/egret_invitation/wingProperties.json" afterPath="" />
+    </list>
+    <list id="6982d971-f9c3-403c-84f7-c90b51141b99" name="ignore" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/egretLearning.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="false" />
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/egret_invitation/index.html" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/eui目录.txt" />
+        <option value="$PROJECT_DIR$/eui学习笔记以及进度.txt" />
+        <option value="$PROJECT_DIR$/EUI的api理解" />
+        <option value="$PROJECT_DIR$/egret消除游戏开发视频学习进度以及笔记" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1889" />
+    <option name="y" value="166" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource ProjectPane="true" />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="egretLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="egretLearning" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="egretLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="egretLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="egretLearning" type="b2602c69:ProjectViewProjectNode" />
+              <item name="egretLearning" type="462c0819:PsiDirectoryNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="Snake" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="D:/workspace/shanhai/coder/zhaojp/djlwForgeSimulator" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\gitworkspace\egret\egretLearning\学习笔记" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="626e7f04-2264-42fa-842a-bdf4bded9d94" name="Default" comment="" />
+      <changelist id="6982d971-f9c3-403c-84f7-c90b51141b99" name="ignore" comment="" />
+      <created>1517032140444</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1517032140444</updated>
+      <workItem from="1517032141595" duration="26228000" />
+    </task>
+    <task id="LOCAL-00001" summary="1、学习eui的笔记&#10;2、修改readme">
+      <created>1517033729393</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1517033729393</updated>
+    </task>
+    <task id="LOCAL-00002" summary="1、学习eui笔记">
+      <created>1517033767249</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1517033767249</updated>
+    </task>
+    <task id="LOCAL-00003" summary="1、皮肤的概念还需在实践中深入理解&#10;2、完成皮肤，布局类、控件、容器的学习">
+      <created>1517041711610</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1517041711610</updated>
+    </task>
+    <task id="LOCAL-00004" summary="1、皮肤的概念还需在实践中深入理解&#10;2、完成皮肤，布局类、控件、容器的学习">
+      <created>1517041775639</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1517041775639</updated>
+    </task>
+    <task id="LOCAL-00005" summary="1、eui learning continue">
+      <created>1517064803085</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1517064803085</updated>
+    </task>
+    <task id="LOCAL-00006" summary="1、eui api 学习整理">
+      <created>1517121832414</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1517121832414</updated>
+    </task>
+    <task id="LOCAL-00007" summary="1、学习笔记文件夹的新建">
+      <created>1517125890745</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1517125890745</updated>
+    </task>
+    <task id="LOCAL-00008" summary="1、卡牌游戏eui源码已经发布版本，仅供自身学习与参考">
+      <created>1517126642129</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1517126642129</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="26228000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22145878" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4940476" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1、学习eui的笔记&#10;2、修改readme" />
+    <MESSAGE value="1、学习eui笔记" />
+    <MESSAGE value="1、皮肤的概念还需在实践中深入理解&#10;2、完成皮肤，布局类、控件、容器的学习" />
+    <MESSAGE value="1、eui learning continue" />
+    <MESSAGE value="1、eui api 学习整理" />
+    <MESSAGE value="1、学习笔记文件夹的新建" />
+    <MESSAGE value="1、卡牌游戏eui源码已经发布版本，仅供自身学习与参考" />
+    <option name="LAST_COMMIT_MESSAGE" value="1、卡牌游戏eui源码已经发布版本，仅供自身学习与参考" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/学习笔记/git常用命令速查表.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/egret_invitation/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="300">
+            <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/学习笔记/EUI的api理解">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1725">
+          <caret line="69" column="8" lean-forward="false" selection-start-line="69" selection-start-column="8" selection-end-line="69" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/学习笔记/eui学习笔记以及进度.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4964">
+          <caret line="129" column="10" lean-forward="false" selection-start-line="129" selection-start-column="10" selection-end-line="129" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/学习笔记/egret消除游戏开发视频学习进度以及笔记">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CardGameDemoEUI/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="275">
+            <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CardGameDemoEUI/logo.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CardGameDemoEUI/release/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="56" lean-forward="true" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HappyKitchen/release/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="20" lean-forward="false" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FingerJump/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="49" lean-forward="false" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ConveyerGame/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test3D/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/CardGameDemoEUI/release/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/cleanGame/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/egret_invitation/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" column="6" lean-forward="true" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/FingerJump/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="57" lean-forward="true" selection-start-line="9" selection-start-column="57" selection-end-line="9" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/HappyKitchen/release/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/PanoDemo/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="124" lean-forward="true" selection-start-line="5" selection-start-column="124" selection-end-line="5" selection-end-column="124" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/Snake/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="64" lean-forward="false" selection-start-line="5" selection-start-column="64" selection-end-line="5" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/Test3D/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/xiaoxiaole/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="48" lean-forward="true" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/xiaoxiaole2/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="47" lean-forward="true" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/Test3D/src/TestShader.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9168">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/Test3D/src/Main.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3368">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game/Snake/src/GameScene.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4993">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

@@ -1,0 +1,40 @@
+{
+	"groups": [
+		{
+			"keys": "bgImage,egretIcon,apple_png,snake_png,control_png",
+			"name": "preload"
+		}
+	],
+	"resources": [
+		{
+			"url": "assets/bg.jpg",
+			"type": "image",
+			"name": "bgImage"
+		},
+		{
+			"url": "assets/egret_icon.png",
+			"type": "image",
+			"name": "egretIcon"
+		},
+		{
+			"url": "config/description.json",
+			"type": "json",
+			"name": "description"
+		},
+		{
+			"url": "assets/apple.png",
+			"type": "image",
+			"name": "apple_png"
+		},
+		{
+			"url": "assets/snake.png",
+			"type": "image",
+			"name": "snake_png"
+		},
+		{
+			"url": "assets/control.png",
+			"type": "image",
+			"name": "control_png"
+		}
+	]
+}
