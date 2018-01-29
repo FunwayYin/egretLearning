@@ -1,0 +1,214 @@
+0、根
+    egret.HashObject
+
+1、常量类
+    egret.BitmapFillMode
+        CLIP : string   在区域的边缘处截断不显示位图
+        REPEAT : string 重复位图以填充区域
+        SCALE : string  位图填充拉伸以填充区域
+
+    egret.BlendMode
+	    ADD : string    将显示对象的原色值添加到它的背景颜色中，上限值为 0xFF
+ 		ERASE : string  根据显示对象的 Alpha 值擦除背景
+ 		NORMAL : string 该显示对象出现在背景前面
+
+ 	egret.Capabilities
+ 	    boundingClientHeight : number   客户端边界高度
+        boundingClientWidth : number    客户端边界宽度
+        engineVersion : string          Egret 的版本号
+        isMobile : boolean              表示程序内容是否运行在移动设备中（例如移动电话或平板电脑）
+        language : string               表示运行内容的系统的语言代码
+        os : string                     指示当前的操作系统
+        renderMode : string             当前渲染模式
+        runtimeType : string            指示当前的运行类型
+        supportVersion : string         native support 的版本号
+
+    egret.CapsStyle
+        NONE : string       用于在 egret.Graphics.lineStyle() 方法的 caps 参数中指定没有端点
+ 	    ROUND : string      用于在 egret.Graphics.lineStyle() 方法的 caps 参数中指定圆头端点
+        SQUARE : string     用于在 egret.Graphics.lineStyle() 方法的 caps 参数中指定方头端点
+
+    egret.DirtyRegionPolicy
+        脏矩形策略常量。
+        OFF ON
+
+    egret.GradientType
+        LINEAR : string     用于指定线性渐变填充的值
+        RADIAL : string     用于指定放射状渐变填充的值
+
+    egret.HorizontalAlign
+        水平对齐
+
+        CENTER              在容器的水平中心对齐内容
+        CONTENT_JUSTIFY     相对于容器对子项进行内容对齐
+        JUSTIFY             水平两端对齐
+        LEFT
+        RIGHT
+
+    egret.VerticalAlign
+        垂直对齐
+
+        BOTTOM
+        CONTENT_JUSTIFY
+        JUSTIFY
+        MIDDLE
+        TOP
+
+    egret.JointStyle
+        线段连接方式
+        在 egret.Graphics.lineStyle() 方法的 joints
+        BEVEL : string  指定斜角连接
+        MITER : string  指定尖角连接
+        ROUND : string  指定圆角连接
+
+    egret.Logger
+       	ALL : string        全开
+        DEBUG : string      等级为 DEBUG
+        ERROR : string      等级为 ERROR
+        INFO : string       等级为 INFO
+        OFF : string        全关
+        WARN : string       等级为 WARN
+        logLevel : string   [只写] 设置当前需要开启的log级别
+
+    egret.RuntimeType
+        NATIVE : string     运行在NATIVE上
+        WEB : string        运行在Web上
+
+    egret.StageScaleMode
+
+        EXACT_FIT : string不保持原始宽高比缩放应用程序内容，缩放后应用程序内容正好填满播放器视口
+        FIXED_HEIGHT : string保持原始宽高比缩放应用程序内容，缩放后应用程序内容在水平和垂直方向都填满播放器视口，但只保持应用程序内容的原始高度不变，宽度可能会改变
+        FIXED_NARROW : string保持原始宽高比缩放应用程序内容，缩放后应用程序内容在水平和垂直方向都填满播放器视口，应用程序内容的较窄方向可能会不够宽而填充
+        FIXED_WIDE : string保持原始宽高比缩放应用程序内容，缩放后应用程序内容在水平和垂直方向都填满播放器视口，应用程序内容的较宽方向的两侧可能会超出播放器视口而被裁切
+        FIXED_WIDTH : string持原始宽高比缩放应用程序内容，缩放后应用程序内容在水平和垂直方向都填满播放器视口，但只保持应用程序内容的原始宽度不变，高度可能会改变
+        NO_BORDER : string保持原始宽高比缩放应用程序内容，缩放后应用程序内容的较窄方向填满播放器视口，另一个方向的两侧可能会超出播放器视口而被裁切
+        NO_SCALE : string不缩放应用程序内容
+        SHOW_ALL : string保持原始宽高比缩放应用程序内容，缩放后应用程序内容的较宽方向填满播放器视口，另一个方向的两侧可能会不够宽而留有黑边
+
+    egret.TextFieldInputType
+         文本输入类型
+
+         PASSWORD
+         TEL
+         TEXT
+
+    egret.TextFieldType
+         动态文本与普通文本
+
+         DYNAMIC
+         INPUT
+
+
+
+2、事件
+    egret.Event
+    egret.EventDispatcher
+    egret.EventPhase
+    egret.FocusEvent
+    egret.TextEvent
+    egret.TimerEvent
+    egret.TouchEvent
+    egret.ProgressEvent
+    egret.IOErrorEvent
+    egret.StageOrientationEvent
+
+3、显示对象
+    egret.DisplayObject
+        egret.Bitmap
+             egret.BitmapData
+        egret.DisplayObjectContainer
+            egret.Sprite
+            egret.Stage
+
+        egret.Shape
+            egret.Graphics
+        egret.Video
+        egret.BitmapText
+        egret.TextField
+
+3、Filter
+    egret.BlurFilter
+    egret.CustomFilter
+    egret.ColorMatrixFilter
+    egret.DropShadowFilter
+    egret.GlowFilter
+
+4、HTTP
+    egret.HttpMethod
+        GET
+        POST
+
+    egret.HttpRequest
+
+    egret.HttpResponseType
+        ARRAY_BUFFER
+        TEXT
+
+    egret.HTTPStatusEvent
+        HTTP_STATUS
+        status
+5、xml
+    egret.XML
+    egret.XMLNode
+    egret.XMLText
+
+6、接口
+    egret.IEventDispatcher
+    egret.IHashObject
+    egret.ITextElement
+    egret.ITextStyle
+
+7、全局函数以及对象
+    window.globalMember
+    egret.全局函数
+    egret.globalMember
+    egret.lifecycle.全局函数
+    egret.localStorage.全局函数
+    egret.lifecycle.LifecycleContext
+    egret.Base64Util
+    egret.NumberUtils
+    egret.Matrix
+    egret.ByteArray
+    egret.Endian
+    egret.EndianConst
+    egret.ExternalInterface
+
+8、other
+
+    egret.HtmlTextParser
+    egret.ImageLoader
+
+    egret.Point
+    egret.Texture
+        egret.RenderTexture
+    egret.SpriteSheet
+        egret.BitmapFont
+    egret.Rectangle
+
+    egret.Timer
+    egret.sys.SystemTicker
+
+    egret.Sound
+    egret.SoundChannel
+
+9、设备有关
+     1、定位相关
+         egret.Geolocation
+         egret.GeolocationEvent
+
+     2、运动状态
+         egret.Motion
+         egret.MotionEvent
+
+     3、方向信息
+         egret.OrientationEvent
+         egret.OrientationMode
+         egret.DeviceOrientation
+         egret.DeviceAcceleration
+             提供设备在三个维度的加速度信息，加速度值的单位是 m/s2
+             x,y,z
+         egret.DeviceRotationRate
+             提供设备围绕三个轴旋转的角速度信息，单位是 角度/秒
+             alpha : number   设备绕 Z 轴旋转的角速度信息，单位是 度/秒
+             beta : number    设备绕 X 轴旋转的角速度信息，单位是 度/秒
+             gamma : number   设备绕 Y 轴旋转的角速度信息，单位是 度/秒
