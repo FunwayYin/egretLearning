@@ -1,0 +1,269 @@
+一、资源管理框架
+   1、遵循 ES6 Promise 标准的异步语法--yes
+       RES.loadConfig().then(()=>{
+           RES.getResAsync("assets/bg.jpg");
+       }).then(()=>{
+           RES.getResAsync("assets/icon.jpg");
+       });
+
+   2、支持 ES2015 async / await 异步语法--yes
+        await RES.loadConfig()
+        await RES.getResAsync("assets/bg.jpg");
+        await RES.getResAsync("assets/icon.jpg");
+
+   3、配置
+       @RES.mapConfig("config.resjs", () => "resource")
+       class Main extends egret.DisplayObjectContainer {
+            constructor(){
+                super();
+                RES.loadConfig();
+            }
+       }
+
+   4、资源生命周期
+        任意一个资源的生命周期都遵循以下机制：
+        加载 -> 处理 -> 持有 -> 销毁实例 -> 销毁缓存
+        处理器（ Processor ）参与整个生命周期过程，并提供必要的函数供开发者进行扩展
+
+   5、自定义处理器
+        开发者如想自定义处理器，首先需要遵循以下接口
+        var customProcessor:RES.processor.Processor = {
+            onLoadStart(host,resource){
+                return new Promise(( reslove ,reject ) => {
+                 })
+            },
+            onRemoveStart(host,resource){
+                 return new Promise(( reslove ,reject ) => {
+                 })
+            },
+            getData(host, resource, key, subkey) => { //可选函数
+            }
+        }
+        编写完自定义处理器后，需要针对类型进行映射
+            RES.processor.map("customType",customProcessor);
+            并在 config.resjs中将特定文件的类型设置为 customType
+
+二、资源加载模块
+
+    1、而对于Egret而言，所有的资源全部存储在服务器端。当用户打开游戏时，Egret会将预先设定好的资源下载到用户本地计算机中，然后转载到内存，以便使用。
+
+    2、RES模块是什么？
+        RES模块是Egret为开发者准备的一套功能完善的资源加载机制。
+        当开发者编写游戏时，无需关心资源加载的细节，只需要指定加载的资源，并且在对应的逻辑位置中添加相应的执行加载代码即可。
+        所谓“RES”，是指Egret中将资源加载的功能放置于“RES”这个命名空间下，同时“RES”也是一个可选的模块，该模块与Egret核心库完全分离，开发者可自行选择使用该模块，也可使用第三方资源加载管理模块。
+        如果游戏所需的资源是我们要购买的若干物品，那么RES模块就好比是采购员。
+        我们把所有资源加载的任务都交给RES模块来管理，包括载入资源加载配置、根据配置载入资源，载入完成后调度相应的事件等等
+
+三、扩展资源加载模块文件解析器
+    1、打开资源配置文件 resource.json ，你可以看到里面的资源文件都有一个 type 类型，可以根据 type 类型自定义它的解析器。
+        {
+            "name":"mc_png",
+            "type":"image",
+            "url":"assets/mc.png"
+        },
+
+        RES.registerAnalyzer(type:string, analyzerClass:any)
+        RES.registerAnalyzer("demo", DemoAnalyzer);
+        当RES加载完文件后，发现它的类型是 demo，就会调用你的 DemoAnalyzer 方法来解析它。
+        注意，这种方式会替换掉默认的内置解析器，所以如果没有特殊需求，尽量不要替换默认的类型。
+        默认的内置解析类型可以在 RES.ResourceItem 中找到。
+
+四、RES内置文件类型解析器
+
+    1、RES内置支持的文件类型有：
+        RES.ResourceItem.TYPE_BIN(bin)：解析为原始的二进制文件
+        RES.ResourceItem.TYPE_IMAGE(image)：解析为egret.Texture对象
+        RES.ResourceItem.TYPE_TEXT(text)：解析为string变量
+        RES.ResourceItem.TYPE_JSON(json)：解析为json对象
+        RES.ResourceItem.TYPE_SHEET(sheet)：解析为egret.SpriteSheet对象
+        RES.ResourceItem.TYPE_FONT(font)：解析为egret.BitmapFont对象 (egret1.5.2新更名，即为之前版本的egret.BitmapTextSpriteSheet)
+        RES.ResourceItem.TYPE_SOUND(sound)：解析为egret.Sound对象
+        RES.ResourceItem.TYPE_XML(xml)：解析为egret.XML对象
+
+    2、配置九宫格参数
+        {"name":"button","scale9grid":"22,0,10,60","type":"image","url":"assets/button.png"}
+
+    3、配置声音资源
+        声音资源需要配置soundType属性，在native和runtime上会根据soundType对声音进行不同的处理。
+        {"name":"bg","soundType":"music/effect","type":"sound","url":"assets/button.png"}
+        其中music表示背景音乐，背景音乐在native上只能同时播放一个。
+        effect表示音效，音效可以和背景音乐一起播放还可以多个音效一起播放。
+
+    4、读取并解析二进制文件
+
+
+五、资源的缓存机制
+    1、资源的缓存机制
+        resources节点下配置的每个资源加载项，在第一次加载成功时会用name属性作为key缓存下来。以后再请求它时，都直接从缓存里取。
+        如果有两个组都含有一个资源，第二个组再加载这个资源时，也会直接从缓存里得到结果，不会重复发起加载请求。
+
+    2、销毁缓存的资源
+        resource在第一次加载资源后，会缓存下来这个资源。
+        使用RES.destroyRes(name:string):boolean，传入资源文件的name，即可清理对应的缓存。
+        传入资源组名，即可清理整个资源组里所有资源对应的缓存。
+        如果要销毁通过RES.getResByUrl(url)加载的资源，传入url作为name即可。
+
+    3、由于目前JS里没有弱引用字典，无法实现资源的自动回收，所以还需要手动去销毁缓存的
+
+六、获取资源的三种方式
+    1、RES.getRes(name:string):any
+        同步获取资源 这种方式只能获取已经缓存过的资源，例如之前调用过loadGroup()被预加载的资源。
+
+    2、RES.getResAsync(name:string,compFunc:Function,thisObject:any):void
+        异步获取资源，这种方式可以获取配置中含有的所有资源项。
+        如果缓存中存在，直接调用回调函数返回，若不存在，就启动网络加载文件并解析后回调。
+
+    3、RES.getResByUrl(url:string,compFunc:Function,thisObject:any,type:string=””):void
+        通过url获取不在配置中的资源，通常不建议使用这个接口，只有那些不合适填写在配置中，比如获取网络上其他服务器的资源时，才采用这种方式。
+
+    4、比较
+        前两种获取方式的name参数都对应配置文件里资源项的name属性。
+        如果name对应的文件是SpriteSheet等含有多个子资源的类型，可以使用”.”语法直接获取到子资源。
+        例如配置里有一个name为”icons”的SpriteSheet文件，它里面含有一个”activity_10”的子位图，我们要获取这个子位图。以下两种写法是等效的：
+
+        var spriteSheet:egret.SpriteSheet = RES.getRes("icons");
+        var texture = spriteSheet.getTexture("activity_10");
+
+        ==
+
+        var texture:egret.Texture = RES.getRes("activity_10");
+
+
+七、加载资源组
+    1、预加载资源组
+        a:在配置文件加载完成后，我们可以调用RES.loadGroup(name:string,priority:number=0)开始预加载配置中的一组资源。
+        b:该函数需要两个参数，参数”name”对应配置文件中的资源组名。预加载可以在游戏启动时，也可以是某个面板被打开前，调用时机由具体项的目逻辑确定。代码如下：
+            RES.addEventListener( RES.ResourceEvent.GROUP_COMPLETE, this.onResourceLoadComplete, this );
+            RES.addEventListener( RES.ResourceEvent.GROUP_PROGRESS, this.onResourceProgress, this );
+            RES.addEventListener( RES.ResourceEvent.GROUP_LOAD_ERROR, this.onResourceLoadErr, this );
+            RES.loadGroup( "preload" );
+
+        c:事件对应的资源组
+            这里需要注意，组加载事件回调函数里的写法，需要使用event.groupName判断下这个事件是属于哪个资源组，因为可能有多个资源组同时在加载。示例代码如下：
+            private onResourceProgress( event:RES.ResourceEvent ):void {
+                if( event.groupName=="preload" ){
+                    this.loadingView.setProgress( event.itemsLoaded,event.itemsTotal );
+                }
+            }
+        d:资源组加载失败处理：由于网络等原因，可能造成资源加载失败，这种情况下将会派发GROUPLOADERROR事件，可以在事件处理中重新加载资源：
+            private onResourceLoadErr( event:RES.ResourceEvent ):void {
+                RES.loadGroup( event.groupName );
+            }
+        e:在复杂的网络环境，可能会出现多次加载失败，这时我们可能需要在一定的失败次数之后停止加载，因为可能网络已经失去连接，那么我们可以通过对加载失败次数进行计数。 假设有一个成员countGroupError用来计数加载失败次数，其初始值为0，则处理函数修改为：
+            private onResourceLoadErr( event:RES.ResourceEvent ):void {
+                if( ++this.countGroupError < 3 ){
+                    RES.loadGroup( event.groupName );
+                }else{
+                    /// 弹出网络失去连接提示等
+                }
+            }
+        f:对于多个资源组同时加载的情况，countGroupError可以使用一个以groupName为键的哈希数组来记录每个资源组的加载失败次数。
+
+        g:同时进行多资源组加载时的优先级控制
+            若同时启动多个资源组一起加载，比如在加载”preload”前，我们希望先加载一个更小的”loading”资源组，以提供显示”preload”组加载进度的素材，
+            可以使用RES.loadGroup()的第二个参数，为”loading”组传入一个优先级更大的数字，来迫使loading组在preload前加载完成，代码如下：
+                RES.loadGroup("loading",1);
+                RES.loadGroup("preload",0);
+
+    二、运行时动态创建资源组
+
+        若资源组无法预先配置在文件中，需要运行时才能动态确定的，我们可以通过调用RES.createGroup(groupName:string,keys:Array)方法，动态创建一个资源组，再加载它。
+            groupName：是要创建的资源组组名。
+            keys：这个资源组包含的资源列表。
+                里面的key对应配置文件里的name属性或一个资源组名，若key是资源组名将类似合并资源组的功能。你可以同时传入多个已存在资源组名，合并成一个新资源组。
+                动态创建资源组之后，调用loadGroup()一次加载完。
+        注意：createGroup()方法是基于已存在的配置属性操作的，调用这个方法前请先确认RES的配置文件已经加载完成了。也就是在监听到ResourceEvent.CONFIG_COMPLETE事件之后。
+
+八、资源加载配置
+    1、RES资源加载配置
+        在Egret中，我们使用json格式作为RES资源加载配置文件的格式。
+        这种格式使用方便，你甚至可以用记事本来编写它。同时，json格式也是模式JavaScript支持的一种解析格式。我们可以得到最快的解析处理。
+        以Egret模板项目的 default.res.json 为例：
+            {
+            "resources":
+                [
+                    {"name":"bgImage","type":"image","url":"assets/bg.jpg"},
+                    {"name":"egretIcon","type":"image","url":"assets/egret_icon.png"},
+                    {"name":"description","type":"json","url":"config/description.json"}
+                ],
+            "groups":
+                [
+                    {"name":"preload","keys":"bgImage,egretIcon"}
+                ]
+            }
+    2、resources
+        配置文件中的 “resources” 我们可以视为资源库，当前游戏使用到的资源都可以放到这里。
+        “resources” 下每一项资源配置信息都包含三个属性：
+            name：表示这个资源的唯一短名标识符。
+            type：表示资源类型。
+            url：表示当前资源文件的路径。
+
+    3、groups
+        “groups” 是预加载资源组的配置，每项是一个资源组，每一个资源组须包含两个属性：
+            name：表示资源组的组名
+            keys：表示这个资源组包含哪些资源，里面的逗号分隔的每一个字符串，都与“resource”下的资源name对应。同一个资源可以存在于多个资源组里。
+
+        如果你有大量资源需要处理，编写配置文件，我们提供了可视化资源配置文件处理软件，可参考Res Depot
+
+    4、载入资源加载配置
+        RES模块对资源加载配置有两种读取方式：
+
+            a:通过配置读取方式，
+                这是一个json文件，通常我们取名为default.res.json。载入代码如下：
+                RES.addEventListener( RES.ResourceEvent.CONFIG_COMPLETE, this.onConfigComplete, this );
+                RES.addEventListener( RES.ResourceEvent.CONFIG_LOAD_ERROR, this.onConfigLoadErr, this );
+                RES.loadConfig("resource/default.res.json","resource/");
+
+                loadConfig函数做执行的动作即为初始化RES资源加载模块。该函数包含两个参数，
+                    第一个参数是default.res.json文件的完整路径，
+                    第二个参数是配置中每个资源项url相对路径的基址。例如配置里的bgImage资源项填的url是assets/bg.jpg，加载时将会拼接为相对路径：resource/assets/bg.jpg。
+
+                若需要在初始化完成后再做一些处理，监听ResourceEvent.CONFIG_COMPLETE事件即可。
+                当然，载入配置也难保证完全不出差错，所以最好监听 ResourceEvent.CONFIG_LOAD_ERROR事件，并在处理函数做一些error log处理之类。
+
+            b:通过路径读取方式。
+
+                如果是项目内资源，相对目录为主目录而不是 RES.loadConfig 中设置的目录，比如：resource/assets/bg.jpg
+
+                如果是外部资源，请使用资源的绝对地址，比如：http://xxx/a.png
+                    class Main extends egret.DisplayObjectContainer {
+                        public constructor() {
+                            super();
+                            this.addEventListener(egret.Event.ADDED_TO_STAGE, this.onAddToStage, this);
+                        }
+                        private onAddToStage(event:egret.Event) {
+                            RES.getResByUrl('resource/assets/bg.jpg',this.onComplete,this,RES.ResourceItem.TYPE_IMAGE);
+                        }
+                        private onComplete(event:any):void {
+                            var img: egret.Texture = <egret.Texture>event;
+                            var bitmap: egret.Bitmap = new egret.Bitmap(img);
+                            this.addChild(bitmap);
+                        }
+                    }
+                RES.getResByUrl 的第四个参数请一定得带上，不然如果加载的地址不能很好辨认类型的话，加载很可能不是想要的结果。
+
+九、RES版本控制
+    1、default.res.json 中 resources 节点下配置的每个资源加载项，在第一次加载成功时会用 name 属性作为 key 在内存缓存下来。
+
+    2、再次请求时，直接从内存缓存里取。如果有两个组都含有一个资源，第二个组再加载这个资源时，也会直接从缓存里得到结果，不会重复发起加载请求。
+
+    3、目前移动设备由于碎片化的问题，对于如 PC 端浏览器的本地临时文件缓存机制，还不是很完整，支持的非常有限。当我们再次进入游戏，资源还是会从服务器重新加载。
+
+    4、在设置配置文件加载项时，最常见的控制缓存机制是在URL后，加入特定字符，如 ?v=123456
+       通过 RES Deopt 打开资源配置文件，双击需要设置的配置项，就可以进行编辑设置
+
+    5、Native版本控制
+        a、getChangeList
+            getChangeList 方法用于获取本次热更新后，新增或改变（文件名相同，但更改过的文件）的资源列表，在Web端此列表为空。返回数组形式，如： [{url:"a.png", size:888}]
+                var array: any[] = RES.getVersionController().getChangeList();
+                if(array.length > 0) {
+                    this.versionText = array[0].url + "|" + array[0].size;
+                }
+
+        b:getVirtualUrl
+            getVirtualUrl 获取资源文件实际的URL地址。
+            由于热更新版本控制实际已经对原来的资源文件的URL进行了改变，因此想获取指定资源文件实际的URL时需要调用此方法。
+            假设我们修改了 resource/assets/bg.jpg 通过热更新后，实际的地址为 resource/9b/9be1d82b_138755.jpg。
+            现在想获取实际地址就可以通过 getVirtualUrl 方法。如下：
+                console.log(RES.getVersionController().getVirtualUrl("resource/assets/bg.jpg"));
+                输出结果为：resource/9b/9be1d82b_138755.jpg
