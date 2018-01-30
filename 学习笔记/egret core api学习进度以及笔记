@@ -2,17 +2,17 @@
     egret.HashObject
 
 1、常量类
-    egret.BitmapFillMode
+    egret.BitmapFillMode --yes
         CLIP : string   在区域的边缘处截断不显示位图
         REPEAT : string 重复位图以填充区域
         SCALE : string  位图填充拉伸以填充区域
 
-    egret.BlendMode
+    egret.BlendMode--yes
 	    ADD : string    将显示对象的原色值添加到它的背景颜色中，上限值为 0xFF
  		ERASE : string  根据显示对象的 Alpha 值擦除背景
  		NORMAL : string 该显示对象出现在背景前面
 
- 	egret.Capabilities
+ 	egret.Capabilities--yes
  	    boundingClientHeight : number   客户端边界高度
         boundingClientWidth : number    客户端边界宽度
         engineVersion : string          Egret 的版本号
@@ -23,20 +23,20 @@
         runtimeType : string            指示当前的运行类型
         supportVersion : string         native support 的版本号
 
-    egret.CapsStyle
+    egret.CapsStyle--yes
         NONE : string       用于在 egret.Graphics.lineStyle() 方法的 caps 参数中指定没有端点
  	    ROUND : string      用于在 egret.Graphics.lineStyle() 方法的 caps 参数中指定圆头端点
         SQUARE : string     用于在 egret.Graphics.lineStyle() 方法的 caps 参数中指定方头端点
 
-    egret.DirtyRegionPolicy
+    egret.DirtyRegionPolicy--yes
         脏矩形策略常量。
         OFF ON
 
-    egret.GradientType
+    egret.GradientType--yes
         LINEAR : string     用于指定线性渐变填充的值
         RADIAL : string     用于指定放射状渐变填充的值
 
-    egret.HorizontalAlign
+    egret.HorizontalAlign--yes
         水平对齐
 
         CENTER              在容器的水平中心对齐内容
@@ -45,7 +45,7 @@
         LEFT
         RIGHT
 
-    egret.VerticalAlign
+    egret.VerticalAlign--yes
         垂直对齐
 
         BOTTOM
@@ -54,14 +54,14 @@
         MIDDLE
         TOP
 
-    egret.JointStyle
+    egret.JointStyle--yes
         线段连接方式
         在 egret.Graphics.lineStyle() 方法的 joints
         BEVEL : string  指定斜角连接
         MITER : string  指定尖角连接
         ROUND : string  指定圆角连接
 
-    egret.Logger
+    egret.Logger--yes
        	ALL : string        全开
         DEBUG : string      等级为 DEBUG
         ERROR : string      等级为 ERROR
@@ -70,11 +70,11 @@
         WARN : string       等级为 WARN
         logLevel : string   [只写] 设置当前需要开启的log级别
 
-    egret.RuntimeType
+    egret.RuntimeType--yes
         NATIVE : string     运行在NATIVE上
         WEB : string        运行在Web上
 
-    egret.StageScaleMode
+    egret.StageScaleMode--yes
 
         EXACT_FIT : string不保持原始宽高比缩放应用程序内容，缩放后应用程序内容正好填满播放器视口
         FIXED_HEIGHT : string保持原始宽高比缩放应用程序内容，缩放后应用程序内容在水平和垂直方向都填满播放器视口，但只保持应用程序内容的原始高度不变，宽度可能会改变
@@ -85,14 +85,14 @@
         NO_SCALE : string不缩放应用程序内容
         SHOW_ALL : string保持原始宽高比缩放应用程序内容，缩放后应用程序内容的较宽方向填满播放器视口，另一个方向的两侧可能会不够宽而留有黑边
 
-    egret.TextFieldInputType
+    egret.TextFieldInputType--yes
          文本输入类型
 
          PASSWORD
          TEL
          TEXT
 
-    egret.TextFieldType
+    egret.TextFieldType--yes
          动态文本与普通文本
 
          DYNAMIC
@@ -192,18 +192,42 @@
     egret.SoundChannel
 
 9、设备有关
-     1、定位相关
+     1、定位--yes
          egret.Geolocation
+             Geolocation 能够从设备的定位服务获取设备的当前位置。
+             当设备的位置发生改变时 Geolocation 会派发 CHANGE 事件。
+             当定位请求被拒绝或该设备没有定位服务时 Geolocation 会派发 IO_ERROR 事件。
          egret.GeolocationEvent
-
-     2、运动状态
+             PERMISSION_DENIED : string  由于用户拒绝访问位置信息，获取位置信息失败
+             UNAVAILABLE : string        设备位置服务不可用或者超时等原因没有得到位置信息
+             accuracy : number           经纬度的准确性，单位是米
+             altitude : number           该位置的海拔信息，如果设备没有实现这个属性时，这个值有可能为 null
+             altitudeAccuracy : number   该位置海拔信息的准确性，单位是米，这个值有可能为 null
+             errorMessage : string       获取位置信息错误的错误信息
+             errorType : string          获取位置信息错误时的错误类型
+             heading : number            表示设备正在前进的方向，单位是度
+             latitude : number           当前位置的纬度信息
+             longitude : number          当前位置的经度信息
+             speed : number              当前设备的速度 单位是 米/秒，这个值可能为 null
+     2、运动--yes
          egret.Motion
+             start
+             stop
          egret.MotionEvent
-
-     3、方向信息
+		     acceleration : egret.DeviceAcceleration
+             acceleration                                                表示设备在 X Y Z 轴方将的加速度信息，单位是 m/s2，不包含重力
+ 		     accelerationIncludingGravity :egret.DeviceAcceleration      表示设备在 X Y Z 轴方将的加速度信息，单位是 m/s2，包含重力
+ 		     rotationRate : egret.DeviceRotationRate rotationRate        表示设备在 alpha、 beta 和 gamma 三个轴向的角速度信息，单位是 角度每秒
+     3、方向--yes
          egret.OrientationEvent
          egret.OrientationMode
+            	AUTO : string               适配屏幕
+             	LANDSCAPE : string          默认横屏，舞台顺时针旋转90度
+             	LANDSCAPE_FLIPPED : string  默认横屏，舞台逆时针旋转90度
+             	PORTRAIT : string           默认竖屏
          egret.DeviceOrientation
+                start/stop
+     4、信息--yes
          egret.DeviceAcceleration
              提供设备在三个维度的加速度信息，加速度值的单位是 m/s2
              x,y,z
