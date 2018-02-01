@@ -128,7 +128,8 @@ class Main extends eui.UILayer {
      * Create scene interface
      */
     protected startCreateScene(): void {
-        this.addChild(new SceneLevels());
+        this.addChild(SceneBegin.Shared());
+        //this.addChild(SceneLevels.Shared());
     }
     
  
